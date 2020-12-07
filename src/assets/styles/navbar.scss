@@ -1,0 +1,29 @@
+.Navbar {
+  background-color: whitesmoke;
+  border-bottom: solid 2px #6c63ff;
+  height: 50px;
+  width: 100%;
+
+  .links {
+    color: #6c63ff;
+    margin-left: 15px;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .links .a {
+    text-decoration: none;
+    font-size: 20px;
+    margin: 10px;
+    color: #6c63ff;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .Navbar {
+    .links .a {
+      text-decoration: none;
+      font-size: 20px;
+      margin: 10px;
+    }
+  }
+}
