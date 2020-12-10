@@ -4,3 +4,10 @@ export type CardItem = {
   desc: string;
   icon: string;
 };
+
+export type Event = {
+  id: number;
+  date: string;
+  title: string;
+  eventDesc: string;
+};

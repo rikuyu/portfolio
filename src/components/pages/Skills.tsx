@@ -28,13 +28,13 @@ const styles = {
   },
   pageTitle: {
     marginTop: "90px",
-    color: "#6c63ff",
-    borderBottom: "double 3px #6c63ff",
+    color: "#3a3a3f",
+    borderBottom: "double 3px #3a3a3f",
     fontSize: "30px",
     display: "inline-block",
   },
   card: {
-    border: "solid 2px #6c63ff",
+    border: "solid 3px #3a3a3f",
     boxShadow: "0 2px 10px rgba(0,0,0,.2)",
     margin: "30px",
   },
@@ -43,7 +43,11 @@ const styles = {
     height: 140,
   },
   title: {
-    borderBottom: "solid 3px #6c63ff",
+    borderBottom: "solid 3px #3a3a3f",
+    color: "#3a3a3f",
+  },
+  desc: {
+    color: "#3a3a3f",
   },
 };
 const cardItemLists: CardItem[] = [
@@ -51,13 +55,38 @@ const cardItemLists: CardItem[] = [
     id: 0,
     title: "React",
     desc: "rrrrrr",
-    icon: "REACT",
+    icon: "src/assets/svg-images/react-original-wordmark.svg",
   },
-  { id: 1, title: "Redux", desc: "dududdu", icon: "REDUX" },
-  { id: 2, title: "Express", desc: "xexeexe", icon: "EXPRESS" },
-  { id: 3, title: "MySQL", desc: "sqssqlsqs", icon: "MYSQL" },
-  { id: 4, title: "Java", desc: "javajavajaav", icon: "JAVA" },
-  { id: 5, title: "AWS", desc: "awsawsaws", icon: "AWS" },
+  {
+    id: 1,
+    title: "Redux",
+    desc: "dududdu",
+    icon: "src/assets/svg-images/redux-original.svg",
+  },
+  {
+    id: 2,
+    title: "Node.js",
+    desc: "awsawsaws",
+    icon: "src/assets/svg-images/amazonwebservices-original-wordmark.svg",
+  },
+  {
+    id: 3,
+    title: "Express",
+    desc: "xexeexe",
+    icon: "src/assets/svg-images/express-original.svg",
+  },
+  {
+    id: 4,
+    title: "MySQL",
+    desc: "sqssqlsqs",
+    icon: "src/assets/svg-images/mysql-original-wordmark.svg",
+  },
+  {
+    id: 5,
+    title: "Java",
+    desc: "javajavajaav",
+    icon: "src/assets/svg-images/java-original-wordmark.svg",
+  },
 ];
 
 function Skills() {
@@ -70,7 +99,13 @@ function Skills() {
             <Grid item xs={12} sm={6} md={4} key={value.id}>
               <Card style={styles.card}>
                 <CardActionArea>
-                  <CardMedia style={styles.media} component="img" src={JAVA} />
+                  <CardMedia
+                    style={styles.media}
+                    component="img"
+                    alt="Img"
+                    height="20px"
+                    image={require("../../assets/svg-images/logo512.png")}
+                  />
                   <CardContent>
                     <Typography
                       gutterBottom
@@ -80,7 +115,11 @@ function Skills() {
                     >
                       {value.title}
                     </Typography>
-                    <Typography variant="body2" component="p">
+                    <Typography
+                      variant="body2"
+                      component="p"
+                      style={styles.desc}
+                    >
                       {value.desc}
                     </Typography>
                   </CardContent>

@@ -1,3 +1,61 @@
-div {
-  margin-top: 100px;
+.home {
+  background: white;
+  margin-bottom: 10px;
+}
+.greet-msg {
+  background: white;
+  text-align: center;
+}
+.greet-msg p {
+  color: #161616;
+  font-size: 35px;
+  position: relative;
+  top: 30%;
+}
+
+.home-img {
+  width: 90%;
+}
+
+@media screen and (min-width: 381px) {
+  .flexbox {
+    margin-top: 5%;
+    -webkit-display: flex;
+    display: flex;
+  }
+  .home {
+    margin: 0;
+    -webkit-flex: 2;
+    flex: 2;
+  }
+  .greet-msg {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+  .blank {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .blank {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .blank {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .blank {
+    height: 80px;
+  }
+  .greet-msg p {
+    margin-bottom: 0;
+  }
+  .home-img {
+    width: 100%;
+  }
 }

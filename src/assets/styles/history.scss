@@ -1,0 +1,37 @@
+.history {
+  background-color: #3a3a3f;
+}
+
+.title {
+  color: #fff;
+  height: 100px;
+  font-size: 30px;
+  position: relative;
+  top: 50px;
+  left: 46%;
+}
+
+.timeline {
+  background-color: #3a3a3f;
+}
+.history-img {
+  width: 30%;
+  text-align: center;
+}
+.vertical-timeline-element-date {
+  color: #fff;
+}
+
+@media screen and (max-width: 1200px) {
+  .vertical-timeline-element-date {
+    color: #3a3a3f;
+  }
+}
+
+//スマホ対応
+@media screen and (max-width: 479px) {
+  .title {
+    left: 37%;
+    width: 40%;
+  }
+}

@@ -1,3 +1,55 @@
-div {
-  margin-top: 100px;
+.blog {
+  background: white;
+  margin-bottom: 10px;
+}
+.blog-msg {
+  background: white;
+  text-align: center;
+}
+.blog-msg p {
+  color: #161616;
+  font-size: 35px;
+  position: relative;
+  top: 30%;
+}
+
+.blog-img {
+  width: 70%;
+}
+
+@media screen and (min-width: 381px) {
+  .flexbox {
+    margin-top: 5%;
+    -webkit-display: flex;
+    display: flex;
+  }
+  .blog {
+    margin: 0;
+    -webkit-flex: 2;
+    flex: 2;
+  }
+  .blog-msg {
+    -webkit-flex: 1;
+    flex: 1;
+  }
+  .blank {
+    height: 70px;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .blank {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .blank {
+    height: 110px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .blank {
+    height: 110px;
+  }
 }
