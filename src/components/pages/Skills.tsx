@@ -7,25 +7,14 @@ import Typography from "@material-ui/core/Typography";
 import { CardItem } from "../../Type";
 import Grid from "@material-ui/core/Grid";
 
-import { ReactComponent as AWS } from "../../assets/svg-images/amazonwebservices-original-wordmark.svg";
-import { ReactComponent as REACT } from "../../assets/svg-images/react-original-wordmark.svg";
-import { ReactComponent as REDUX } from "../../assets/svg-images/redux-original.svg";
-import { ReactComponent as EXPRESS } from "../../assets/svg-images/express-original.svg";
-import { ReactComponent as JAVA } from "../../assets/svg-images/java-original-wordmark.svg";
-import { ReactComponent as MYSQL } from "../../assets/svg-images/mysql-original-wordmark.svg";
-
-// import { Theme } from "@material-ui/core/styles/createMuiTheme";
-// import withStyles, {
-//   WithStyles,
-//   StyleRules,
-// } from "@material-ui/core/styles/withStyles";
-// import createStyles from "@material-ui/core/styles/createStyles";
+// import { ReactComponent as AWS } from "../../assets/svg-images/amazonwebservices-original-wordmark.svg";
+// import { ReactComponent as REACT } from "../../assets/svg-images/react-original-wordmark.svg";
+// import { ReactComponent as REDUX } from "../../assets/svg-images/redux-original.svg";
+// import { ReactComponent as EXPRESS } from "../../assets/svg-images/express-original.svg";
+// import { ReactComponent as JAVA } from "../../assets/svg-images/java-original-wordmark.svg";
+// import { ReactComponent as MYSQL } from "../../assets/svg-images/mysql-original-wordmark.svg";
 
 const styles = {
-  gridContainer: {
-    // paddingRight: "30px",
-    // paddingLeft: "30px",
-  },
   pageTitle: {
     marginTop: "90px",
     color: "#3a3a3f",
@@ -54,37 +43,37 @@ const cardItemLists: CardItem[] = [
   {
     id: 0,
     title: "React",
-    desc: "rrrrrr",
+    desc: "世界的に流行しているフレームワークなので勉強をしています。",
     icon: "src/assets/svg-images/react-original-wordmark.svg",
   },
   {
     id: 1,
     title: "Redux",
-    desc: "dududdu",
+    desc: "大規模開発を考え、状態管理を学びたいと思って勉強し始めました。",
     icon: "src/assets/svg-images/redux-original.svg",
   },
   {
     id: 2,
     title: "Node.js",
-    desc: "awsawsaws",
+    desc: "サーバーサイドを学びたいと思って勉強を始めました。",
     icon: "src/assets/svg-images/amazonwebservices-original-wordmark.svg",
   },
   {
     id: 3,
     title: "Express",
-    desc: "xexeexe",
+    desc: "Node.jsをより簡易的に書けると知り、勉強を始めました。",
     icon: "src/assets/svg-images/express-original.svg",
   },
   {
     id: 4,
     title: "MySQL",
-    desc: "sqssqlsqs",
+    desc: "DBの知識を学びたいと思い勉強し始めました。",
     icon: "src/assets/svg-images/mysql-original-wordmark.svg",
   },
   {
     id: 5,
     title: "Java",
-    desc: "javajavajaav",
+    desc: "Javaで木構造や整列、スタックなどのアルゴリズムを学びました。",
     icon: "src/assets/svg-images/java-original-wordmark.svg",
   },
 ];
@@ -93,7 +82,7 @@ function Skills() {
   return (
     <div>
       <span style={styles.pageTitle}>My Skills</span>
-      <Grid container justify="center" spacing={4} style={styles.gridContainer}>
+      <Grid container justify="center" spacing={4}>
         {cardItemLists.map((value) => {
           return (
             <Grid item xs={12} sm={6} md={4} key={value.id}>
@@ -102,9 +91,9 @@ function Skills() {
                   <CardMedia
                     style={styles.media}
                     component="img"
-                    alt="Img"
-                    height="20px"
-                    image={require("../../assets/svg-images/logo512.png")}
+                    alt="SkillsImg"
+                    height="20"
+                    image="/src/assets/svg-images/logo512.png"
                   />
                   <CardContent>
                     <Typography

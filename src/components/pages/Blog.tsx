@@ -13,7 +13,7 @@ function Blog() {
           </p>
         </section>
         <section className="blog">
-          <BLOG className="blog-img" />
+          <BLOG />
         </section>
       </div>
     </div>

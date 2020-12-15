@@ -2,19 +2,19 @@ import React from "react";
 import "../../assets/styles/top.scss";
 import { ReactComponent as HOME } from "../../assets/svg-images/home.svg";
 
-const styles = {
-  img: {
-    width: "410px",
-    height: "170px",
-  },
-  pageTitle: {
-    marginTop: "90px",
-    color: "#161616",
-    borderBottom: "double 3px #161616",
-    fontSize: "30px",
-    display: "inline-block",
-  },
-};
+// const styles = {
+//   img: {
+//     width: "410px",
+//     height: "170px",
+//   },
+//   pageTitle: {
+//     marginTop: "90px",
+//     color: "#161616",
+//     borderBottom: "double 3px #161616",
+//     fontSize: "30px",
+//     display: "inline-block",
+//   },
+// };
 
 function Top() {
   return (

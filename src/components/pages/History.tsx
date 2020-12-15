@@ -1,6 +1,6 @@
 import React from "react";
 import { Event } from "../../Type";
-import { ReactComponent as HISTORY } from "../../assets/svg-images/history.svg";
+//import { ReactComponent as HISTORY } from "../../assets/svg-images/history.svg";
 
 import {
   VerticalTimeline,
