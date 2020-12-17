@@ -1,5 +1,4 @@
 import React from "react";
-import BLOG from "../../assets/svg-images/blog.png";
 
 function Blog() {
   return (
@@ -12,9 +11,7 @@ function Blog() {
             ブログを通して物を売り、マーケティングなどの勉強にも取り組んでいます。
           </p>
         </section>
-        <section className="blog">
-          <BLOG />
-        </section>
+        <section className="blog"></section>
       </div>
     </div>
   );

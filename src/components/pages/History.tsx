@@ -1,7 +1,4 @@
 import React from "react";
-import { Event } from "../../Type";
-//import { ReactComponent as HISTORY } from "../../assets/svg-images/history.svg";
-
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -9,6 +6,13 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 import "../../assets/styles/history.scss";
+
+type Event = {
+  id: number;
+  date: string;
+  title: string;
+  eventDesc: string;
+};
 
 const eventLists: Event[] = [
   {
@@ -65,7 +69,7 @@ function History() {
   return (
     <div className="history">
       <div>
-        <h2 className="title">History</h2>
+        <p className="title">History</p>
       </div>
       <VerticalTimeline className="timeline">
         {eventLists.map((value) => {

@@ -4,7 +4,6 @@ import CardActionArea from "@material-ui/core/CardActionArea";
 import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Typography from "@material-ui/core/Typography";
-import { CardItem } from "../../Type";
 import Grid from "@material-ui/core/Grid";
 
 // import { ReactComponent as AWS } from "../../assets/svg-images/amazonwebservices-original-wordmark.svg";
@@ -39,6 +38,14 @@ const styles = {
     color: "#3a3a3f",
   },
 };
+
+type CardItem = {
+  id: number;
+  title: string;
+  desc: string;
+  icon: string;
+};
+
 const cardItemLists: CardItem[] = [
   {
     id: 0,
