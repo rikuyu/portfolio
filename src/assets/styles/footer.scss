@@ -4,10 +4,21 @@
   height: 50px;
   position: relative;
   bottom: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
   p {
-    padding: 8px 0;
     text-align: center;
     color: #3a3a3f;
+  }
+  .icon {
+    width: 50px;
+    padding-top: 13px;
+  }
+  .first {
+    margin-left: 25px;
   }
 }
 

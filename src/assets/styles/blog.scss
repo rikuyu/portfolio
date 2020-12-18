@@ -1,20 +1,17 @@
-.blog {
-  background: white;
-  margin-bottom: 10px;
-}
-.blog-msg {
+.blogMsg {
   background: white;
   text-align: center;
+  width: 45%;
 }
-.blog-msg p {
+.blogMsg p {
   color: #161616;
-  font-size: 35px;
+  font-size: 20px;
   position: relative;
   top: 30%;
 }
 
-.blog-img {
-  width: 70%;
+.blogImg {
+  width: 55%;
 }
 
 @media screen and (min-width: 381px) {
@@ -28,7 +25,7 @@
     -webkit-flex: 2;
     flex: 2;
   }
-  .blog-msg {
+  .blogMsg {
     -webkit-flex: 1;
     flex: 1;
   }

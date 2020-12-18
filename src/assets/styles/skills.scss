@@ -1,26 +1,48 @@
+.skill,
+.content {
+  background-color: #3a3a3f;
+}
+.skill {
+  padding-bottom: 20px;
+}
+
 .pageSkill {
-  color: #3a3a3f;
+  color: #f5f5f5;
   text-align: center;
   padding-top: 60px;
   padding-bottom: 0%;
   font-size: 30px;
 }
 .card {
-  border: solid 2px #545457;
+  border: solid 2px #f5f5f5;
+  background-color: #3a3a3f;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
-  margin: 20px;
+  padding: 0px;
+  margin-right: auto;
 }
 
 .cardTitle {
-  border-bottom: solid 3px #3a3a3f;
-  color: #3a3a3f;
+  border-bottom: solid 3px #f5f5f5;
+  background-color: #3a3a3f;
+  color: #f5f5f5;
 }
 .desc {
-  color: #3a3a3f;
+  color: #f5f5f5;
+  background-color: #3a3a3f;
 }
 
-.colored {
+.skillIcon {
   font-size: 6rem;
   text-align: center;
-  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  background-color: #3a3a3f;
+}
+
+.devicon-express-original {
+  color: #f5f5f5;
+}
+
+.devicon-mysql-plain {
+  color: skyblue;
 }

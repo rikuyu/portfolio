@@ -1,5 +1,5 @@
 import React from "react";
-import "../../assets/styles/top.scss";
+import "../../assets/styles/home.scss";
 import { ReactComponent as HOME } from "../../assets/svg-images/home.svg";
 import Footer from "../Footer";
 

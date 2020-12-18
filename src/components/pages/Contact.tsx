@@ -3,6 +3,7 @@ import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
+import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
 import { useForm } from "react-hook-form";
 import Footer from "../Footer";
 import "../../assets/styles/contact.scss";
@@ -97,6 +98,12 @@ function Contact() {
           <TwitterIcon
             className="icon"
             onClick={() => window.open("https://github.com/rikuyu", "_blank")}
+          />
+          <LibraryBooksIcon
+            className="icon"
+            onClick={() =>
+              window.open("https://www.yuuuki-blog.com/", "_blank")
+            }
           />
         </div>
       </div>
