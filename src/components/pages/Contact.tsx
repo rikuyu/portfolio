@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import { useForm } from "react-hook-form";
+import Footer from "../Footer";
 import "../../assets/styles/contact.scss";
 
 function Contact() {
@@ -83,7 +84,7 @@ function Contact() {
             type="submit"
             style={{ marginTop: 10 }}
           >
-            Submit
+            送信
           </Button>
         </form>
         <div className="buttons">
@@ -99,6 +100,7 @@ function Contact() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

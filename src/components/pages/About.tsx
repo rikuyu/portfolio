@@ -4,6 +4,7 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableRow from "@material-ui/core/TableRow";
+import Footer from "../Footer";
 import "../../assets/styles/about.scss";
 
 function createData(name: string, context: string) {
@@ -52,7 +53,7 @@ const myInfo: Info[] = [
 export default function About() {
   return (
     <div className="about">
-      <div className="pageTitle">
+      <div className="pageAbout">
         <p>About me</p>
       </div>
       <div className="container">
@@ -87,6 +88,7 @@ export default function About() {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

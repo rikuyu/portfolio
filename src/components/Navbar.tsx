@@ -40,42 +40,42 @@ function Navbar() {
                 value={routes[0]}
                 component={Link}
                 to="/top"
-                style={styles.tabColor}
+                // style={styles.tabColor}
               />
               <Tab
                 label="About"
                 value={routes[1]}
                 component={Link}
                 to={routes[1]}
-                style={styles.tabColor}
+                // style={styles.tabColor}
               />
               <Tab
                 label="Skills"
                 value={routes[2]}
                 component={Link}
                 to={routes[2]}
-                style={styles.tabColor}
+                // style={styles.tabColor}
               />
               <Tab
                 label="History"
                 value={routes[3]}
                 component={Link}
                 to={routes[3]}
-                style={styles.tabColor}
+                // style={styles.tabColor}
               />
               <Tab
                 label="Blog"
                 value={routes[4]}
                 component={Link}
                 to={routes[4]}
-                style={styles.tabColor}
+                // style={styles.tabColor}
               />
               <Tab
                 label="Contact"
                 value={routes[5]}
                 component={Link}
                 to={routes[5]}
-                style={styles.tabColor}
+                // style={styles.tabColor}
               />
             </Tabs>
           </AppBar>
