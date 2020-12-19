@@ -6,14 +6,53 @@ import TwitterIcon from "@material-ui/icons/Twitter";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
 import { useForm } from "react-hook-form";
 import Footer from "../Footer";
+import { init, sendForm } from "emailjs-com";
 import "../../assets/styles/contact.scss";
 
 function Contact() {
   const { register, handleSubmit, errors } = useForm();
 
+  init(`${process.env.REACT_APP_USER_ID}`);
+
   const onSubmit = (data) => {
     console.log(data);
+    sendForm(
+      `${process.env.REACT_APP_SERVICE_ID}`,
+      `${process.env.REACT_APP_TEMPLATE_ID}`,
+      "#contact-form"
+    ).then(
+      function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+      },
+      function (error) {
+        console.log("FAILED...", error);
+      }
+    );
   };
+
+  // function sendEmail(e) {
+  //   // e.preventDefault();
+
+  //   emailjs
+  //     .sendForm(
+  //       "",
+  //       "",
+  //       e.target,
+  //       ""
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log("メール送信成功", result.text);
+  //       },
+  //       (error) => {
+  //         console.log("メール送信失敗", error.text);
+  //       }
+  //     );
+  // }
+
+  // const onSubmit = (data) => {
+  //   console.log(data);
+  // };
   // console.log(errors);
 
   return (
@@ -27,18 +66,22 @@ function Contact() {
             お気軽に下記フォームよりご連絡ください。下記フォーム内容はいずれも必須事項となっております。必須事項をご記入の上ご連絡ください。
           </p>
         </div>
-        <form className="forms" onSubmit={handleSubmit(onSubmit)}>
+        <form
+          className="forms"
+          onSubmit={handleSubmit(onSubmit)}
+          id="contact-form"
+        >
           <TextField
             className="formsItem"
             variant="filled"
             label="氏名(必須)"
             type="text"
-            name="title"
+            name="name"
             fullWidth
             margin="normal"
             inputRef={register({ required: true, maxLength: 20 })}
-            error={Boolean(errors.title)}
-            helperText={errors.title && "氏名をご入力ください"}
+            error={Boolean(errors.name)}
+            helperText={errors.name && "氏名をご入力ください"}
           />
           <TextField
             className="formsItem"

@@ -26,6 +26,13 @@ const cardItemLists: CardItem[] = [
   },
   {
     id: 1,
+    title: "Material-UI",
+    desc: "このサイトはMaterial-UIを使用して作成されています。",
+    rate: 1,
+    icon: "devicon-materialui-plain colored",
+  },
+  {
+    id: 2,
     title: "Redux",
     desc:
       "大規模開発を考え、状態管理について学びたいと思って勉強し始めました。",
@@ -33,21 +40,21 @@ const cardItemLists: CardItem[] = [
     icon: "devicon-redux-original colored",
   },
   {
-    id: 2,
+    id: 3,
     title: "Node.js",
     desc: "サーバーサイドを学びたいと思って勉強を始めました。",
     rate: 1,
     icon: "devicon-nodejs-plain colored padd",
   },
   {
-    id: 3,
+    id: 4,
     title: "Express",
     desc: "Node.jsをより簡易的に書けると知り、勉強を始めました。",
     rate: 2,
     icon: "devicon-express-original",
   },
   {
-    id: 4,
+    id: 5,
     title: "MySQL",
     desc:
       "DBについて学びたいと思って勉強し始めました。MySQLという名の由来面白いですよね。",
@@ -55,7 +62,7 @@ const cardItemLists: CardItem[] = [
     icon: "devicon-mysql-plain",
   },
   {
-    id: 5,
+    id: 6,
     title: "Java",
     desc:
       "大学で学んだ言語です。この言語で木構造や整列、スタックなどのアルゴリズムを学びました。",
@@ -63,12 +70,20 @@ const cardItemLists: CardItem[] = [
     icon: "devicon-java-plain colored padd",
   },
   {
-    id: 6,
+    id: 7,
     title: "TypeScript",
     desc:
       "中・大規模開発に向けて静的型付けを学んでいます。学習コストが高いと感じています。",
     rate: 1,
     icon: "devicon-typescript-plain colored",
+  },
+  {
+    id: 8,
+    title: "Github",
+    desc:
+      "基本的な使い方は学習済みですが、実際にチーム開発で使用したことはありません。",
+    rate: 1,
+    icon: "devicon-github-original",
   },
 ];
 

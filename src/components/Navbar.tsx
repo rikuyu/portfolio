@@ -8,7 +8,7 @@ import Contact from "../components/pages/Contact";
 import { Tab, Tabs, AppBar } from "@material-ui/core";
 
 function Navbar() {
-  const routes = ["/home", "/about", "/skills", "/history", "/contact"];
+  const routes = ["/", "/about", "/skills", "/history", "/contact"];
 
   return (
     <Router>
@@ -29,7 +29,7 @@ function Navbar() {
                 label="HOME"
                 value={routes[0]}
                 component={Link}
-                to="/home"
+                to="/"
                 className="navItem"
               />
               <Tab
@@ -62,7 +62,7 @@ function Navbar() {
         )}
       />
       <Switch>
-        <Route exact path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
         <Route path="/skills" component={Skills} />
         <Route path="/history" component={History} />
