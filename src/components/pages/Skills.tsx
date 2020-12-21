@@ -27,7 +27,7 @@ const cardItemLists: CardItem[] = [
   {
     id: 1,
     title: "Material-UI",
-    desc: "このサイトはMaterial-UIを使用して作成されています。",
+    desc: "このサイトはMaterial-UIを使用して制作されています。",
     rate: 3,
     icon: "devicon-materialui-plain colored",
   },
@@ -35,7 +35,7 @@ const cardItemLists: CardItem[] = [
     id: 2,
     title: "Redux",
     desc:
-      "大規模開発を考え、状態管理について学びたいと思って勉強し始めました。",
+      "大規模開発を考え、状態管理について学びたいと思って勉強を始めました。",
     rate: 1,
     icon: "devicon-redux-original colored",
   },
@@ -57,7 +57,7 @@ const cardItemLists: CardItem[] = [
     id: 5,
     title: "MySQL",
     desc:
-      "DBについて学びたいと思って勉強し始めました。MySQLという名の由来面白いですよね。",
+      "DBについて学びたいと思って勉強を始めました。MySQLという名前の由来面白いですよね。",
     rate: 2,
     icon: "devicon-mysql-plain",
   },

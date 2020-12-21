@@ -1,43 +1,50 @@
+$text-color: #f5f5f5;
+$background-color: #3a3a3f;
+
 .contact {
-  background-color: #3a3a3f;
-}
-.titleContact {
-  color: #f5f5f5;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 0%;
-  font-size: 30px;
-}
-.forms {
-  margin: 80px;
-  margin-top: 40px;
-}
-.container {
-  margin: 60px;
-  margin-top: 0px;
-  background-color: #3a3a3f;
-}
-.formsItem {
-  background-color: white;
-}
+  background-color: $background-color;
 
-.contactMsg {
-  text-align: center;
-  padding-top: 10px;
-  p {
-    color: whitesmoke;
-  }
-}
+  .container {
+    margin: 60px;
+    margin-top: 0px;
+    background-color: $background-color;
 
-.buttons {
-  text-align: center;
-  .icon {
-    color: white;
-    margin: 0px 20px 0px 0px;
-    padding-bottom: 0px;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
+    .titleContact {
+      color: $text-color;
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 0%;
+      font-size: 30px;
+    }
+
+    .contactMsg {
+      text-align: center;
+      padding-top: 10px;
+      p {
+        color: $text-color;
+      }
+    }
+
+    .forms {
+      margin: 80px;
+      margin-top: 40px;
+
+      .formsItem {
+        background-color: $text-color;
+      }
+    }
+
+    .buttons {
+      text-align: center;
+      .icon {
+        color: $text-color;
+        margin: 0px 10px 0px 10px;
+        padding-bottom: 0px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+      }
+    }
   }
 }
 
@@ -48,32 +55,46 @@
   .contactMsg {
     padding-top: 0px;
     p {
-      color: whitesmoke;
+      color: $text-color;
     }
   }
 }
 
 @media screen and (max-width: 479px) {
-  .container {
-    margin: 20px;
-    .titleContact {
-      position: relative;
-      left: 32%;
-      padding-top: 45px;
-      width: 38%;
-      font-size: 35px;
-    }
-    .titleContact p {
-      color: #f5f5f5;
-    }
-    .forms {
-      margin: 0px;
-      padding-bottom: 40px;
-    }
-    .contactMsg {
-      padding-top: 2px;
-      p {
-        color: whitesmoke;
+  .contact {
+    .container {
+      margin: 0px 20px;
+      .titleContact {
+        position: relative;
+        left: 32%;
+        padding-top: 45px;
+        width: 38%;
+        font-size: 35px;
+
+        p {
+          color: $text-color;
+          margin-bottom: 10px;
+        }
+      }
+
+      .contactMsg {
+        padding-top: 2px;
+        p {
+          color: $text-color;
+        }
+      }
+
+      .forms {
+        margin: 0px;
+        padding-bottom: 40px;
+      }
+
+      .buttons {
+        .icon {
+          padding-bottom: 25px;
+          margin: 0px 10px 0px 10px;
+          cursor: pointer;
+        }
       }
     }
   }

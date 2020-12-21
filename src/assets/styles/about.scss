@@ -1,71 +1,87 @@
+$text-color: #f5f5f5;
+$background-color: #3a3a3f;
+$question-color: rgb(135, 206, 235);
+$answer-color: rgb(216, 112, 147);
+
 .about {
-  background-color: #3a3a3f;
-}
-.container {
-  padding: 20px 0px 0px 20px;
-  .tableItem {
-    font-size: 16px;
-    color: #f5f5f5;
-  }
-  .headline {
-    font-size: 18px;
-  }
-}
-.pageAbout {
-  color: #f5f5f5;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 0%;
-  font-size: 30px;
-}
+  background-color: $background-color;
 
-.queAndAns {
-  margin: 0px 100px 0px 100px;
-  padding: 30px 0 30px 0;
-}
-
-.question {
-  p {
-    color: #f5f5f5;
-  }
-  p:first-letter {
-    color: skyblue;
-
+  .pageAbout {
+    color: $text-color;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 0%;
     font-size: 30px;
   }
-}
-.answer {
-  p {
-    color: #f5f5f5;
-    border-bottom: 1px solid #f5f5f5;
-  }
-  p:first-letter {
-    color: palevioletred;
-    font-size: 30px;
+
+  .container {
+    padding: 20px 0px 0px 20px;
+    .tableItem {
+      font-size: 16px;
+      color: $text-color;
+    }
+    .headline {
+      font-size: 18px;
+    }
+
+    .queAndAns {
+      margin: 0px 100px 0px 100px;
+      padding: 30px 0 30px 0;
+    }
+
+    .question {
+      p {
+        color: $text-color;
+      }
+      p:first-letter {
+        color: $question-color;
+
+        font-size: 30px;
+      }
+    }
+    .answer {
+      p {
+        color: $text-color;
+        border-bottom: 1px solid $text-color;
+      }
+      p:first-letter {
+        color: $answer-color;
+        font-size: 30px;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 1020px) {
-  .queAndAns {
-    margin: 0px 5px 0px 5px;
-    padding: 30px 0 50px 0;
+  .about {
+    .container {
+      margin: 20px 10px 15px 10px;
+      padding: 10px 10px 0px 10px;
+      .queAndAns {
+        margin: 0px 5px 0px 5px;
+        padding: 30px 0 50px 0;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 479px) {
-  .pageAbout {
-    padding-top: 20px;
-    margin-top: 40px;
-    p {
-      color: #f5f5f5;
+  .about {
+    .pageAbout {
+      padding-top: 20px;
+      margin-top: 40px;
+      p {
+        color: $text-color;
+      }
     }
-  }
-  .container {
-    padding-left: 0;
-    padding-top: 0;
-    .queAndAns {
-      margin: 0px 5px 0px 5px;
-      padding: 30px 0 50px 0;
+
+    .container {
+      margin: 0px;
+      padding: 0 10px 0 10px;
+      .queAndAns {
+        margin: 0px 5px 0px 5px;
+        padding: 30px 0 50px 0;
+      }
     }
   }
 }

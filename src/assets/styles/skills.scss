@@ -1,68 +1,80 @@
+$text-color: #f5f5f5;
+$background-color: #3a3a3f;
+$mysql-icon-color: skyblue;
+
 .skill,
 .content {
-  background-color: #3a3a3f;
+  background-color: $background-color;
 }
 .skill {
   padding-bottom: 20px;
-}
 
-.pageSkill {
-  color: #f5f5f5;
-  text-align: center;
-  padding-top: 60px;
-  padding-bottom: 0%;
-  font-size: 30px;
-}
-.card {
-  border: solid 2px #f5f5f5;
-  background-color: #3a3a3f;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
-  padding: 0px;
-  margin-right: auto;
-}
+  .container {
+    margin: 0px 40px 0px 40px;
+    padding-left: 0;
+    padding-bottom: 30px;
 
-.cardTitle {
-  border-bottom: solid 3px #f5f5f5;
-  background-color: #3a3a3f;
-  color: #f5f5f5;
-}
-.desc {
-  color: #f5f5f5;
-  background-color: #3a3a3f;
-}
+    .pageSkill {
+      color: $text-color;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 10px;
+      font-size: 30px;
+    }
 
-.skillIcon {
-  font-size: 6rem;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  background-color: #3a3a3f;
-}
+    .card {
+      border: solid 2px $text-color;
+      background-color: $background-color;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+      padding: 0px;
+      margin-right: auto;
 
-.devicon-express-original,
-.devicon-github-original {
-  color: #f5f5f5;
-}
+      .cardTitle {
+        border-bottom: solid 3px $text-color;
+        background-color: $background-color;
+        color: $text-color;
+      }
 
-.devicon-mysql-plain {
-  color: skyblue;
+      .desc {
+        color: $text-color;
+        background-color: $background-color;
+      }
+
+      .skillIcon {
+        font-size: 6rem;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 15px;
+        background-color: $background-color;
+      }
+
+      .devicon-express-original,
+      .devicon-github-original {
+        color: $text-color;
+      }
+
+      .devicon-mysql-plain {
+        color: $mysql-icon-color;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 479px) {
   .skill {
     padding-bottom: 40px;
     .container {
-      padding-left: 0;
+      margin: 0px 30px;
       .pageSkill {
-        color: #f5f5f5;
+        color: $text-color;
         position: relative;
         left: 30%;
-        padding: 35px 0 10px 0;
+        padding: 45px 0 5px 0;
         width: 38%;
         padding-left: 0;
       }
       .pageSkill p {
-        color: #f5f5f5;
+        color: $text-color;
       }
     }
   }
