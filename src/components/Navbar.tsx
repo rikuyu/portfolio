@@ -11,7 +11,9 @@ function Navbar() {
   const routes = ["/", "/about", "/skills", "/history", "/contact"];
 
   return (
-    <Router>
+    <Router
+      basename={process.env.NODE_ENV === "production" ? "/Portfolio" : ""}
+    >
       <Route
         path="/"
         render={(history) => (
