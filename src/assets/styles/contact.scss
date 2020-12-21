@@ -56,14 +56,25 @@
 @media screen and (max-width: 479px) {
   .container {
     margin: 20px;
-  }
-  .forms {
-    margin: 0px;
-  }
-  .contactMsg {
-    padding-top: 2px;
-    p {
-      color: whitesmoke;
+    .titleContact {
+      position: relative;
+      left: 32%;
+      padding-top: 45px;
+      width: 38%;
+      font-size: 35px;
+    }
+    .titleContact p {
+      color: #f5f5f5;
+    }
+    .forms {
+      margin: 0px;
+      padding-bottom: 40px;
+    }
+    .contactMsg {
+      padding-top: 2px;
+      p {
+        color: whitesmoke;
+      }
     }
   }
 }

@@ -69,7 +69,7 @@ function History() {
   return (
     <div className="history">
       <div>
-        <p className="title">History</p>
+        <p className="titleHistory">History</p>
       </div>
       <VerticalTimeline className="timeline">
         {eventLists.map((value) => {

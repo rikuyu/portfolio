@@ -28,7 +28,7 @@ const cardItemLists: CardItem[] = [
     id: 1,
     title: "Material-UI",
     desc: "このサイトはMaterial-UIを使用して作成されています。",
-    rate: 1,
+    rate: 3,
     icon: "devicon-materialui-plain colored",
   },
   {
@@ -43,7 +43,7 @@ const cardItemLists: CardItem[] = [
     id: 3,
     title: "Node.js",
     desc: "サーバーサイドを学びたいと思って勉強を始めました。",
-    rate: 1,
+    rate: 2,
     icon: "devicon-nodejs-plain colored padd",
   },
   {
@@ -82,7 +82,7 @@ const cardItemLists: CardItem[] = [
     title: "Github",
     desc:
       "基本的な使い方は学習済みですが、実際にチーム開発で使用したことはありません。",
-    rate: 1,
+    rate: 2,
     icon: "devicon-github-original",
   },
 ];
