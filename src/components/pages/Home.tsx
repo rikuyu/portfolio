@@ -1,20 +1,29 @@
 import React from "react";
 import "../../assets/styles/home.scss";
-import { ReactComponent as HOME } from "../../assets/svg-images/home.svg";
 import Footer from "../Footer";
 
 function Top() {
   return (
     <div>
       <div className="home-body">
-        <div className="blank"></div>
-        <div className="flexbox">
-          <section className="greet-msg">
-            <p>Welcome to Yuki's PortFolio</p>
-          </section>
-          <section className="home">
-            <HOME className="home-img" />
-          </section>
+        <div className="area">
+          <div className="titleHome">
+            <p>Welocome to</p>
+            <p>Yuki's Portfolio</p>
+          </div>
+          <ul className="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </div>
         <Footer />
       </div>

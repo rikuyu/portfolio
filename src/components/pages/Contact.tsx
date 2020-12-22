@@ -14,7 +14,7 @@ function Contact() {
 
   init(`${process.env.REACT_APP_USER_ID}`);
 
-  const onSubmit = (data) => {
+  const sendMail = (data) => {
     console.log(data);
     sendForm(
       `${process.env.REACT_APP_SERVICE_ID}`,
@@ -28,6 +28,8 @@ function Contact() {
         console.log("FAILED...", error);
       }
     );
+
+    window.alert("Thank you for getting in touch");
   };
 
   // function sendEmail(e) {
@@ -50,11 +52,6 @@ function Contact() {
   //     );
   // }
 
-  // const onSubmit = (data) => {
-  //   console.log(data);
-  // };
-  // console.log(errors);
-
   return (
     <div className="contact">
       <div className="container">
@@ -68,7 +65,7 @@ function Contact() {
         </div>
         <form
           className="forms"
-          onSubmit={handleSubmit(onSubmit)}
+          onSubmit={handleSubmit(sendMail)}
           id="contact-form"
         >
           <TextField
@@ -148,6 +145,9 @@ function Contact() {
               window.open("https://www.yuuuki-blog.com/", "_blank")
             }
           />
+        </div>
+        <div className="my-gmail">
+          <p>yuuukiuu@gmail.com</p>
         </div>
       </div>
       <Footer />

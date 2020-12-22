@@ -45,6 +45,13 @@ $background-color: #3a3a3f;
         cursor: pointer;
       }
     }
+    .my-gmail {
+      p {
+        color: $text-color;
+        font-size: 20px;
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -91,10 +98,14 @@ $background-color: #3a3a3f;
 
       .buttons {
         .icon {
-          padding-bottom: 25px;
+          padding-bottom: 0px;
           margin: 0px 10px 0px 10px;
           cursor: pointer;
         }
+      }
+
+      .my-gmail {
+        padding-bottom: 10px;
       }
     }
   }
