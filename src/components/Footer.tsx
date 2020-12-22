@@ -10,11 +10,11 @@ function Footer() {
       <p className="footItem">© 2020 Yuki</p>
       <GitHubIcon
         className="icon footItem first"
-        onClick={() => window.open("https://twitter.com/yuuuki_blog", "_blank")}
+        onClick={() => window.open("https://github.com/rikuyu", "_blank")}
       />
       <TwitterIcon
         className="icon footItem"
-        onClick={() => window.open("https://github.com/rikuyu", "_blank")}
+        onClick={() => window.open("https://twitter.com/yuuuki_blog", "_blank")}
       />
       <LibraryBooksOutlinedIcon
         className="icon footItem"

@@ -76,6 +76,18 @@ $mysql-icon-color: skyblue;
       .pageSkill p {
         color: $text-color;
       }
+      .MuiGrid-item {
+        padding: 16px 35px;
+      }
+      .card {
+        .content {
+          padding-top: 0;
+          padding-bottom: 10;
+        }
+        .skillIcon {
+          margin-top: 15px;
+        }
+      }
     }
   }
 }

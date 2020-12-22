@@ -134,13 +134,13 @@ function Contact() {
         <div className="buttons">
           <GitHubIcon
             className="icon"
-            onClick={() =>
-              window.open("https://twitter.com/yuuuki_blog", "_blank")
-            }
+            onClick={() => window.open("https://github.com/rikuyu", "_blank")}
           />
           <TwitterIcon
             className="icon"
-            onClick={() => window.open("https://github.com/rikuyu", "_blank")}
+            onClick={() =>
+              window.open("https://twitter.com/yuuuki_blog", "_blank")
+            }
           />
           <LibraryBooksIcon
             className="icon"

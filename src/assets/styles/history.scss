@@ -15,23 +15,38 @@ $background-color: #3a3a3f;
     background-color: $background-color;
 
     .vertical-timeline-element-date {
-      color: $text-color;
+      color: white;
     }
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .vertical-timeline-element-date {
-    color: $background-color;
+  .history {
+    .timeline {
+      background-color: $background-color;
+
+      .vertical-timeline-element-date {
+        color: $background-color;
+      }
+    }
   }
 }
 
 @media screen and (max-width: 479px) {
-  .titleHistory {
-    position: relative;
-    left: 32%;
-    padding-top: 52px;
-    width: 38%;
-    font-size: 35px;
+  .history {
+    .titleHistory {
+      position: relative;
+      left: 32%;
+      padding-top: 52px;
+      width: 38%;
+      font-size: 35px;
+    }
+    .timeline {
+      background-color: $background-color;
+
+      .vertical-timeline-element-date {
+        color: $background-color;
+      }
+    }
   }
 }

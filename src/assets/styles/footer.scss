@@ -16,6 +16,7 @@
   .icon {
     width: 50px;
     padding-top: 13px;
+    cursor: pointer;
   }
   .first {
     margin-left: 25px;
@@ -23,9 +24,15 @@
 }
 
 @media screen and (max-width: 479px) {
-  p {
-    padding: 4px 0;
-    text-align: center;
-    color: #3a3a3f;
+  .footer {
+    height: 65px;
+    p {
+      padding: 4px 0;
+      text-align: center;
+      color: #3a3a3f;
+    }
+    .icon {
+      padding-top: 18px;
+    }
   }
 }
