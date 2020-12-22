@@ -8,7 +8,7 @@ function Top() {
       <div className="home-body">
         <div className="area">
           <div className="titleHome">
-            <p>Welocome to</p>
+            <p>Welcome to</p>
             <p>Yuki's Portfolio</p>
           </div>
           <ul className="circles">

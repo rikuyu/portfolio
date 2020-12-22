@@ -21,36 +21,16 @@ function Contact() {
       `${process.env.REACT_APP_TEMPLATE_ID}`,
       "#contact-form"
     ).then(
-      function (response) {
+      (response) => {
         console.log("SUCCESS!", response.status, response.text);
       },
-      function (error) {
+      (error) => {
         console.log("FAILED...", error);
       }
     );
 
     window.alert("Thank you for getting in touch");
   };
-
-  // function sendEmail(e) {
-  //   // e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "",
-  //       "",
-  //       e.target,
-  //       ""
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log("メール送信成功", result.text);
-  //       },
-  //       (error) => {
-  //         console.log("メール送信失敗", error.text);
-  //       }
-  //     );
-  // }
 
   return (
     <div className="contact">
