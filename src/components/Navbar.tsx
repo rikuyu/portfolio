@@ -8,7 +8,32 @@ import Contact from "../components/pages/Contact";
 import { Tab, Tabs, AppBar } from "@material-ui/core";
 
 function Navbar() {
-  const routes = ["/", "/about", "/skills", "/history", "/contact"];
+  const navbarItem = [
+    {
+      route: "/",
+      label: "HOME",
+    },
+    {
+      route: "/about",
+      label: "ABOUT",
+    },
+    {
+      route: "/skills",
+      label: "SKILLS",
+    },
+    {
+      route: "/history",
+      label: "HISTORY",
+    },
+    {
+      route: "/contact",
+      label: "CONTACT",
+    },
+    {
+      route: "/",
+      label: "HOME",
+    },
+  ];
 
   return (
     <Router
@@ -28,36 +53,35 @@ function Navbar() {
               variant="scrollable"
             >
               <Tab
-                label="HOME"
-                value={routes[0]}
+                label={navbarItem[0].label}
+                value={navbarItem[0].route}
                 component={Link}
-                to="/"
-                className="navItem"
+                to={navbarItem[0].route}
               />
               <Tab
-                label="About"
-                value={routes[1]}
+                label={navbarItem[1].label}
+                value={navbarItem[1].route}
                 component={Link}
-                to={routes[1]}
+                to={navbarItem[1].route}
               />
               <Tab
-                label="Skills"
-                value={routes[2]}
+                label={navbarItem[2].label}
+                value={navbarItem[2].route}
                 component={Link}
-                to={routes[2]}
+                to={navbarItem[2].route}
               />
               <Tab
-                label="History"
-                value={routes[3]}
+                label={navbarItem[3].label}
+                value={navbarItem[3].route}
                 component={Link}
-                to={routes[3]}
+                to={navbarItem[3].route}
               />
 
               <Tab
-                label="Contact"
-                value={routes[4]}
+                label={navbarItem[4].label}
+                value={navbarItem[4].route}
                 component={Link}
-                to={routes[4]}
+                to={navbarItem[4].route}
               />
             </Tabs>
           </AppBar>
