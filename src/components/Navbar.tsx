@@ -7,8 +7,13 @@ import History from "../components/pages/History";
 import Contact from "../components/pages/Contact";
 import { Tab, Tabs, AppBar } from "@material-ui/core";
 
+type navbarItem = {
+  route: string;
+  label: string;
+};
+
 function Navbar() {
-  const navbarItem = [
+  const navbarItem: navbarItem[] = [
     {
       route: "/",
       label: "HOME",
@@ -28,10 +33,6 @@ function Navbar() {
     {
       route: "/contact",
       label: "CONTACT",
-    },
-    {
-      route: "/",
-      label: "HOME",
     },
   ];
 
