@@ -85,6 +85,13 @@ const cardItemLists: CardItem[] = [
     rate: 2,
     icon: "devicon-github-original",
   },
+  {
+    id: 9,
+    title: "C",
+    desc: "学校の講義で学習しました。",
+    rate: 2,
+    icon: "devicon-c-plain colored",
+  },
 ];
 
 function Skills() {
