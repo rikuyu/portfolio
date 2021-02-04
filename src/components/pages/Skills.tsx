@@ -90,7 +90,21 @@ const cardItemLists: CardItem[] = [
     title: "C",
     desc: "学校の講義で学習しました。",
     rate: 2,
-    icon: "devicon-c-plain colored",
+    icon: "devicon-c-plain c-color",
+  },
+  {
+    id: 10,
+    title: "Ruby",
+    desc: "Railsを使うために勉強を開始しました。",
+    rate: 2,
+    icon: "devicon-ruby-plain colored",
+  },
+  {
+    id: 11,
+    title: "Ruby on Rails",
+    desc: "バックエンドの知識を深めるために勉強を開始しました。",
+    rate: 2,
+    icon: "devicon-rails-plain-wordmark rails-color",
   },
 ];
 

@@ -37,28 +37,21 @@ const eventLists: Event[] = [
       "HTML・CSSと出会い学習を開始しました。CSSにとても苦手意識があります。",
   },
   {
-    id: 3,
-    date: "2020-01",
-    title: "Ruby・Ruby on Rails の学習開始",
-    eventDesc:
-      "掲示板などを制作しましたが、今後の技術の需要を考え、学習を中断する。",
-  },
-  {
-    id: 5,
+    id: 4,
     date: "2020-03",
     title: "JavaScriptの学習開始",
     eventDesc:
       "フロント・サーバーサイドの両方の開発が可能であることに価値を感じ、JSを学び始める",
   },
   {
-    id: 6,
+    id: 5,
     date: "2020-08",
     title: "Reactの学習開始・Blogの開始",
     eventDesc:
       "日本国内外の需要を踏まえ、Reactの学習を始める。同時期にブログを始める。",
   },
   {
-    id: 7,
+    id: 6,
     date: "2020-09",
     title: "Node・Expressの学習開始",
     eventDesc: "WebAPIに興味がわき、勉強を開始する。",
