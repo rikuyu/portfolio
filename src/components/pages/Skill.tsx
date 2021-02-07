@@ -6,109 +6,94 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Rating from "@material-ui/lab/Rating";
 import Footer from "../Footer";
-import "../../assets/styles/skills.scss";
+import { CardItem } from "../../Types";
+import "../../assets/styles/skill.scss";
 
-type CardItem = {
-  id: number;
-  title: string;
-  desc: string;
-  rate: number;
-  icon: string;
-};
-
-const cardItemLists: CardItem[] = [
+export const skillItems: CardItem[] = [
   {
     id: 0,
     title: "React",
-    desc: "最近はReactに加えてNext.jsなんかも学びたいと思っています。",
+    desc: "最近はReactに加えてNext.jsなんかも学びたいと思っています.",
     rate: 3,
     icon: "devicon-react-original colored",
   },
   {
     id: 1,
-    title: "Material-UI",
-    desc: "このサイトはMaterial-UIを使用して制作されています。",
-    rate: 3,
-    icon: "devicon-materialui-plain colored",
+    title: "Redux",
+    desc: "大規模開発を考え、状態管理について学びたいと思って勉強を始めました.",
+    rate: 1,
+    icon: "devicon-redux-original redux-color",
   },
   {
     id: 2,
-    title: "Redux",
-    desc:
-      "大規模開発を考え、状態管理について学びたいと思って勉強を始めました。",
-    rate: 1,
-    icon: "devicon-redux-original colored",
-  },
-  {
-    id: 3,
     title: "Node.js",
-    desc: "サーバーサイドを学びたいと思って勉強を始めました。",
+    desc: "サーバーサイドを学びたいと思って勉強を始めました.",
     rate: 2,
     icon: "devicon-nodejs-plain colored padd",
   },
   {
-    id: 4,
+    id: 3,
     title: "Express",
-    desc: "Node.jsをより簡易的に書けると知り、勉強を始めました。",
+    desc: "Node.jsをより簡易的に書けると知り、勉強を始めました.",
     rate: 2,
     icon: "devicon-express-original",
   },
   {
-    id: 5,
+    id: 4,
     title: "MySQL",
     desc:
-      "DBについて学びたいと思って勉強を始めました。MySQLという名前の由来面白いですよね。",
+      "DBについて学びたいと思って勉強を始めました.MySQLという名前の由来面白いですよね.",
     rate: 2,
     icon: "devicon-mysql-plain",
   },
   {
-    id: 6,
+    id: 5,
     title: "Java",
     desc:
-      "大学で学んだ言語です。この言語で木構造や整列、スタックなどのアルゴリズムを学びました。",
+      "大学で学んだ言語です.この言語で木構造や整列、スタックなどのアルゴリズムを学びました.",
     rate: 3,
     icon: "devicon-java-plain colored padd",
   },
   {
-    id: 7,
+    id: 6,
     title: "TypeScript",
     desc:
-      "中・大規模開発に向けて静的型付けを学んでいます。学習コストが高いと感じています。",
+      "中・大規模開発に向けて静的型付けを学んでいます.学習コストが高いと感じています.",
     rate: 1,
-    icon: "devicon-typescript-plain colored",
+    icon: "devicon-typescript-plain ts-color",
   },
   {
-    id: 8,
+    id: 7,
     title: "Github",
     desc:
-      "基本的な使い方は学習済みですが、実際にチーム開発で使用したことはありません。",
+      "基本的な使い方は学習済みですが、実際にチーム開発で使用したことはありません.",
     rate: 2,
     icon: "devicon-github-original",
   },
   {
-    id: 9,
+    id: 8,
     title: "C",
-    desc: "学校の講義で学習しました。",
+    desc: "学校の講義で学習しました.",
     rate: 2,
     icon: "devicon-c-plain c-color",
   },
   {
-    id: 10,
+    id: 9,
     title: "Ruby",
-    desc: "Railsを使うために勉強を開始しました。",
-    rate: 2,
-    icon: "devicon-ruby-plain colored",
+    desc: "Railsを使うために勉強を開始しました.",
+    rate: 1,
+    icon: "devicon-ruby-plain ruby-color",
   },
   {
-    id: 11,
+    id: 10,
     title: "Ruby on Rails",
-    desc: "バックエンドの知識を深めるために勉強を開始しました。",
+    desc: "バックエンドの知識を深めるために勉強を開始しました.",
     rate: 2,
     icon: "devicon-rails-plain-wordmark rails-color",
   },
 ];
 
-function Skills() {
+const Skills: React.FC = () => {
   return (
     <div className="body">
       <div className="skill">
@@ -117,7 +102,7 @@ function Skills() {
             <p>My Skills</p>
           </div>
           <Grid container justify="center" spacing={4}>
-            {cardItemLists.map((value) => {
+            {skillItems.map((value) => {
               return (
                 <Grid item xs={12} sm={6} md={4} key={value.id}>
                   <Card className="card">
@@ -152,6 +137,6 @@ function Skills() {
       <Footer />
     </div>
   );
-}
+};
 
 export default Skills;

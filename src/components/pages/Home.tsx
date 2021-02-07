@@ -2,7 +2,7 @@ import React from "react";
 import "../../assets/styles/home.scss";
 import Footer from "../Footer";
 
-function Top() {
+const Top = () => {
   return (
     <div>
       <div className="home-body">
@@ -29,6 +29,6 @@ function Top() {
       </div>
     </div>
   );
-}
+};
 
 export default Top;

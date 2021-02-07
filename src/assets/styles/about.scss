@@ -15,7 +15,7 @@ $answer-color: rgb(216, 112, 147);
   }
 
   .container {
-    padding: 20px 0px 0px 20px;
+    padding: 20px 20px 0px 20px;
     .tableItem {
       font-size: 16px;
       color: $text-color;
@@ -27,31 +27,62 @@ $answer-color: rgb(216, 112, 147);
     .queAndAns {
       margin: 0px 100px 0px 100px;
       padding: 30px 0 30px 0;
-    }
 
-    .question {
-      p {
-        color: $text-color;
+      .question {
+        p {
+          color: $text-color;
+        }
+        p:first-letter {
+          color: $question-color;
+          font-size: 30px;
+        }
       }
-      p:first-letter {
-        color: $question-color;
+      .answer {
+        
+        p {
+          color: $text-color;
+          border-bottom: 1px solid $text-color;
+        }
+        p:first-letter {
+          color: $answer-color;
+          font-size: 30px;
+        }
+      }
 
-        font-size: 30px;
+      .openButton {
+        background-color: $text-color;
+        color: $background-color;
+        font-size: 15px;
+        padding: 3px 10px;
+        margin-bottom: 6px;
       }
-    }
-    .answer {
-      p {
-        color: $text-color;
-        border-bottom: 1px solid $text-color;
-      }
-      p:first-letter {
-        color: $answer-color;
-        font-size: 30px;
-      }
-    }
+    }  
   }
 }
 
+.modal{
+  background-color: $background-color;
+  margin: 100px 50px 0px 50px;
+  padding: 5px 30px 20px 30px;
+  border-radius: 15px;
+  border-style: none;
+  .winTitle{
+    p{
+      color: $answer-color;
+      font-size: 30px;
+    }
+  }
+  .winContext{
+    margin-bottom: 20px;
+    p{
+      color: $text-color;
+    }
+  }
+  .closeButton{
+    margin-bottom: 10px;
+  }
+}
+  
 @media screen and (max-width: 1020px) {
   .about {
     .container {
@@ -63,6 +94,10 @@ $answer-color: rgb(216, 112, 147);
       }
     }
   }
+  .modal{
+    margin: 100px 20px 0px 20px;
+    padding: 5px 20px 20px 20px;
+  } 
 }
 
 @media screen and (max-width: 479px) {
@@ -81,7 +116,11 @@ $answer-color: rgb(216, 112, 147);
       .queAndAns {
         margin: 0px 5px 0px 5px;
         padding: 30px 0 50px 0;
-      }
+      } 
     }
   }
+  .modal{
+    margin: 100px 20px 0px 20px;
+    padding: 5px 20px 20px 20px;
+  } 
 }

@@ -2,18 +2,14 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Home from "../components/pages/Home";
 import About from "../components/pages/About";
-import Skills from "../components/pages/Skills";
+import Skill from "../components/pages/Skill";
 import History from "../components/pages/History";
 import Contact from "../components/pages/Contact";
 import { Tab, Tabs, AppBar } from "@material-ui/core";
+import { NavbarItem } from "../Types";
 
-type navbarItem = {
-  route: string;
-  label: string;
-};
-
-function Navbar() {
-  const navbarItem: navbarItem[] = [
+const Navbar = () => {
+  const navbarItem: NavbarItem[] = [
     {
       route: "/",
       label: "HOME",
@@ -91,12 +87,12 @@ function Navbar() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/about" component={About} />
-        <Route path="/skills" component={Skills} />
+        <Route path="/skills" component={Skill} />
         <Route path="/history" component={History} />
         <Route path="/contact" component={Contact} />
       </Switch>
     </Router>
   );
-}
+};
 
 export default Navbar;

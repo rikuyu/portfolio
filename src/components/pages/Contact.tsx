@@ -9,7 +9,7 @@ import Footer from "../Footer";
 import { init, sendForm } from "emailjs-com";
 import "../../assets/styles/contact.scss";
 
-function Contact() {
+const Contact = () => {
   const { register, handleSubmit, errors } = useForm();
 
   init(`${process.env.REACT_APP_USER_ID}`);
@@ -133,6 +133,6 @@ function Contact() {
       <Footer />
     </div>
   );
-}
+};
 
 export default Contact;

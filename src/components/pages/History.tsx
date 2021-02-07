@@ -5,14 +5,8 @@ import {
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import Footer from "../Footer";
+import { Event } from "../../Types";
 import "../../assets/styles/history.scss";
-
-type Event = {
-  id: number;
-  date: string;
-  title: string;
-  eventDesc: string;
-};
 
 const eventLists: Event[] = [
   {
@@ -58,7 +52,7 @@ const eventLists: Event[] = [
   },
 ];
 
-function History() {
+const History = () => {
   return (
     <div className="history">
       <div>
@@ -84,6 +78,6 @@ function History() {
       <Footer />
     </div>
   );
-}
+};
 
 export default History;
