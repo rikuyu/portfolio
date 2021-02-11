@@ -116,7 +116,7 @@ const Contact = () => {
           <TwitterIcon
             className="icon"
             onClick={() =>
-              window.open("https://twitter.com/yuuuki_blog", "_blank")
+              window.open("https://twitter.com/yuuukiuu", "_blank")
             }
           />
           <LibraryBooksIcon

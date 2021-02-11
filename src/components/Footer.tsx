@@ -14,7 +14,7 @@ function Footer() {
       />
       <TwitterIcon
         className="icon footItem"
-        onClick={() => window.open("https://twitter.com/yuuuki_blog", "_blank")}
+        onClick={() => window.open("https://twitter.com/yuuukiuu", "_blank")}
       />
       <LibraryBooksOutlinedIcon
         className="icon footItem"
