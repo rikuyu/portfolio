@@ -4,6 +4,10 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
+import BusinessIcon from "@material-ui/icons/Business";
+import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
+import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
+import EmojiEventsIcon from "@material-ui/icons/EmojiEvents";
 import Footer from "../Footer";
 import { Event } from "../../Types";
 import "../../assets/styles/history.scss";
@@ -75,6 +79,29 @@ const History = () => {
           );
         })}
       </VerticalTimeline>
+
+      <p className="titleHistory">Future</p>
+      <p className="titleFuture">～これからしたいこと～</p>
+      <div className="futureList">
+        <div className="futureItem">
+          <BusinessIcon className="futureIcon" />
+          <p>
+            チーム体制での開発経験を積みたいです。インターンに積極的に参加したい。ハッカソンもやりたいです。
+          </p>
+        </div>
+        <div className="futureItem">
+          <PeopleAltIcon className="futureIcon" />
+          <p>勉強会やカンファレンス等に参加したい。</p>
+        </div>
+        <div className="futureItem">
+          <PhoneIphoneIcon className="futureIcon" />
+          <p>少し興味があるので、Mobileアプリ開発かじってみたい。</p>
+        </div>
+        <div className="futureItem">
+          <EmojiEventsIcon className="futureIcon" />
+          <p>Atcoder 少しずつ過去問解き始めてます。</p>
+        </div>
+      </div>
       <Footer />
     </div>
   );
