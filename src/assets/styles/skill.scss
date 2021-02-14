@@ -1,6 +1,5 @@
 $text-color: #f5f5f5;
 $background-color: #3a3a3f;
-$mysql-icon-color: skyblue;
 
 .skill,
 .content {
@@ -66,7 +65,7 @@ $mysql-icon-color: skyblue;
       }
 
       .devicon-mysql-plain {
-        color: $mysql-icon-color;
+        color: skyblue;
       }
     }
   }

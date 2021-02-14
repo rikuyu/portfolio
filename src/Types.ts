@@ -14,6 +14,7 @@ export type Event = {
 };
 
 export type NavbarItem = {
+  id: number;
   route: string;
   label: string;
 };
