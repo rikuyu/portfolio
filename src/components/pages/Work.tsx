@@ -7,7 +7,7 @@ const Work = () => {
     <div className="body">
       <div className="work">
         <div className="container">
-          <p>Comming Soon</p>
+          <p>Coming Soon</p>
         </div>
       </div>
       <Footer />
