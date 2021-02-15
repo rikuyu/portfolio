@@ -3,4 +3,15 @@ $background-color: #3a3a3f;
 
 .work{
     background-color: $background-color;
+    padding: 310px 0px;
+
+    .container{
+        p{
+            color: $text-color;
+            text-align: center;
+            font-size: 30px;
+            margin: 0 40px 100px 40px;
+            border-bottom: solid 2px $text-color;
+        }
+    }
 }

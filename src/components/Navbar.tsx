@@ -71,42 +71,6 @@ const Navbar = () => {
                   />
                 );
               })}
-              {/* <Tab
-                label={navbarItem[0].label}
-                value={navbarItem[0].route}
-                component={Link}
-                to={navbarItem[0].route}
-              />
-              <Tab
-                label={navbarItem[1].label}
-                value={navbarItem[1].route}
-                component={Link}
-                to={navbarItem[1].route}
-              />
-              <Tab
-                label={navbarItem[2].label}
-                value={navbarItem[2].route}
-                component={Link}
-                to={navbarItem[2].route}
-              />
-              <Tab
-                label={navbarItem[3].label}
-                value={navbarItem[3].route}
-                component={Link}
-                to={navbarItem[3].route}
-              />
-              <Tab
-                label={navbarItem[4].label}
-                value={navbarItem[4].route}
-                component={Link}
-                to={navbarItem[4].route}
-              />
-              <Tab
-                label={navbarItem[5].label}
-                value={navbarItem[5].route}
-                component={Link}
-                to={navbarItem[5].route}
-              /> */}
             </Tabs>
           </AppBar>
         )}
