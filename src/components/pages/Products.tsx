@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../Footer";
 import "../../assets/styles/work.scss";
 
-const Work = () => {
+const Products = () => {
   return (
     <div className="body">
       <div className="work">
@@ -15,4 +15,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Products;
