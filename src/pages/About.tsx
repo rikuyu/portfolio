@@ -5,10 +5,10 @@ import TableCell from "@material-ui/core/TableCell";
 import TableContainer from "@material-ui/core/TableContainer";
 import TableRow from "@material-ui/core/TableRow";
 import Button from "@material-ui/core/Button";
-import Footer from "../Footer";
+import Footer from "../components/Footer";
 import Modal from "react-modal";
-import { MyInfo } from "../../Types";
-import "../../assets/styles/about.scss";
+import { MyInfo } from "../Types";
+import "../assets/styles/about.scss";
 
 const createData = (name: string, context: string) => {
   return { name, context };
@@ -16,7 +16,7 @@ const createData = (name: string, context: string) => {
 
 const rows = [
   createData("名前", "小林 勇貴"),
-  createData("所属", "同志社大学 情報システムデザイン学科 二回"),
+  createData("所属", "同志社大学 情報システムデザイン学科 3年"),
   createData("趣味", "ゲーム、読書"),
 ];
 

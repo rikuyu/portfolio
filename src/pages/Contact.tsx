@@ -5,9 +5,9 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import LibraryBooksIcon from "@material-ui/icons/LibraryBooks";
 import { useForm } from "react-hook-form";
-import Footer from "../Footer";
+import Footer from "../components/Footer";
 import { init, sendForm } from "emailjs-com";
-import "../../assets/styles/contact.scss";
+import "../assets/styles/contact.scss";
 
 const Contact = () => {
   const { register, handleSubmit, errors } = useForm();

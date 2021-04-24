@@ -2,15 +2,27 @@ $icon-color: #3a3a3f;
 
 .btn-menu{
     display: none;
+
+    .navbar-title{
+        color: $icon-color;
+        padding-top: 8px;
+        padding-left: 15px;
+        font-weight: 400;
+        font-size: 20px;
+        text-align: left;
+        margin: 0;
+    }
+
+    .menu-icon, .close-icon{
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
 }
 .tabs{
     display: block;
 }
 
-.menu-icon, .close-icon{
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
 .menu-item-icon{
     color: $icon-color;
     margin-right: 12px;
@@ -21,13 +33,19 @@ $icon-color: #3a3a3f;
         display: none;
     }
     .btn-menu{
-        display: block;
-    }
-    .menu-icon, .close-icon{
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    .btn{
-        text-align: right;
+        display: flex;
+
+        .navbar-title{
+            text-align: left;
+        }
+
+        .btn{
+            margin-left: auto;
+
+            .menu-icon, .close-icon{
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
     }
   }

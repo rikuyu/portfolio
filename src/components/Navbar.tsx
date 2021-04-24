@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import "../assets/styles/navbar.scss";
-import Home from "../components/pages/Home";
-import About from "../components/pages/About";
-import Skill from "../components/pages/Skill";
-import History from "../components/pages/History";
-import Products from "../components/pages/Products";
-import Contact from "../components/pages/Contact";
+import Home from "../pages/Home";
+import About from "../pages/About";
+import Skill from "../pages/Skill";
+import History from "../pages/History";
+import Products from "../pages/Products";
+import Contact from "../pages/Contact";
 import { Tab, Tabs, AppBar } from "@material-ui/core";
 import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
@@ -97,6 +97,7 @@ const Navbar = () => {
               </Tabs>
             </div>
             <div className="btn-menu">
+              <p className="navbar-title">Yuki's Portolio</p>
               <div className="btn">
                 <Button
                   aria-controls="simple-menu"

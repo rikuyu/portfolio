@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../Footer";
-import "../../assets/styles/work.scss";
+import Footer from "../components/Footer";
+import "../assets/styles/work.scss";
 
 const Products = () => {
   return (

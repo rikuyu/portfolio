@@ -8,9 +8,9 @@ import BusinessIcon from "@material-ui/icons/Business";
 import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
 import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
 import EmojiEventsIcon from "@material-ui/icons/EmojiEvents";
-import Footer from "../Footer";
-import { Event } from "../../Types";
-import "../../assets/styles/history.scss";
+import Footer from "../components/Footer";
+import { Event } from "../Types";
+import "../assets/styles/history.scss";
 
 const eventLists: Event[] = [
   {

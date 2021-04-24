@@ -1,6 +1,6 @@
 import React from "react";
-import "../../assets/styles/home.scss";
-import Footer from "../Footer";
+import "../assets/styles/home.scss";
+import Footer from "../components/Footer";
 
 const Top = () => {
   return (

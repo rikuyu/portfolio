@@ -5,9 +5,9 @@ import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Rating from "@material-ui/lab/Rating";
-import Footer from "../Footer";
-import { CardItem } from "../../Types";
-import "../../assets/styles/skill.scss";
+import Footer from "../components/Footer";
+import { CardItem } from "../Types";
+import "../assets/styles/skill.scss";
 
 export const skillItems: CardItem[] = [
   {
