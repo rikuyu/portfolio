@@ -126,7 +126,7 @@ const Products = () => {
                             />
                           ) : (
                             <DesktopMacIcon
-                              className="linkIcon"
+                              className="linkIcon blogIcon"
                               onClick={() => window.open(value.link, "_blank")}
                             />
                           )}
