@@ -11,6 +11,8 @@ export type ProductItem = {
   title: string;
   desc: string;
   img: string;
+  techs: string[];
+  link: string;
 };
 
 export type Event = {
