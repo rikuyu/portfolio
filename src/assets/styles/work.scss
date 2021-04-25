@@ -1,17 +1,86 @@
 $text-color: #f5f5f5;
 $background-color: #3a3a3f;
 
-.work{
-    background-color: $background-color;
-    padding: 310px 0px;
+.product,
+.content {
+  background-color: $background-color;
+}
+.product {
+  padding-bottom: 20px;
 
-    .container{
-        p{
-            color: $text-color;
-            text-align: center;
-            font-size: 30px;
-            margin: 0 50px 100px 50px;
-            border-bottom: solid 2px $text-color;
-        }
+  .container {
+    margin: 0px 40px 0px 40px;
+    padding-left: 0;
+    padding-bottom: 30px;
+
+    .pageProduct {
+      color: $text-color;
+      text-align: center;
+      padding-top: 60px;
+      padding-bottom: 10px;
+      font-size: 30px;
     }
+
+    .card {
+      border: solid 2px $text-color;
+      background-color: $background-color;
+      box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.05);
+      padding: 0px;
+      margin-right: auto;
+
+      .cardImg{
+        width: 240;
+        height: 170;
+      }
+
+      .cardTitle {
+        border-bottom: solid 3px $text-color;
+        background-color: $background-color;
+        color: $text-color;
+        font-size: 20px;
+
+      }
+
+      .desc {
+        color: $text-color;
+        background-color: $background-color;
+      }
+    }
+  }
+  .bottomMsg{
+    color: $text-color;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .skill {
+    padding-bottom: 40px;
+    .container {
+      margin: 0px 25px;
+      .pageSkill {
+        color: $text-color;
+        position: relative;
+        left: 30%;
+        padding: 45px 0 5px 0;
+        width: 38%;
+        padding-left: 0;
+      }
+      .pageSkill p {
+        color: $text-color;
+      }
+      .MuiGrid-item {
+        padding: 16px 35px;
+      }
+      .card {
+        .content {
+          padding-top: 0;
+          padding-bottom: 10;
+        }
+      }
+    }
+  }
 }

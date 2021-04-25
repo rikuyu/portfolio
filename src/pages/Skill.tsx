@@ -27,7 +27,7 @@ export const skillItems: CardItem[] = [
   {
     id: 2,
     title: "React",
-    desc: "最近はReactに加えてNext.jsなんかも学びたいと思っています.",
+    desc: "このポートフォリオはReact × TS × Material-UI で作られています.",
     rate: 3,
     icon: "devicon-react-original colored",
   },
@@ -56,7 +56,7 @@ export const skillItems: CardItem[] = [
     id: 6,
     title: "MySQL",
     desc:
-      "DBについて学びたいと思って勉強を始めました.MySQLという名前の由来面白いですよね.",
+      "DBについて学びたいと思って勉強を始めました. MySQLという名前の由来面白いですよね.",
     rate: 2,
     icon: "devicon-mysql-plain",
   },
@@ -64,7 +64,7 @@ export const skillItems: CardItem[] = [
     id: 7,
     title: "Firebase",
     desc:
-      "Android開発にて、Cloud Firestore, Auth、Cloud Storage を使用しました。",
+      "Android開発にて、Cloud Firestore, Auth, Cloud Storage を使用しました。",
     rate: 2,
     icon: "devicon-firebase-plain colored",
   },
@@ -86,35 +86,27 @@ export const skillItems: CardItem[] = [
   },
   {
     id: 10,
-    title: "Github",
-    desc:
-      "基本的な使い方は学習済みですが、実際にチーム開発で使用したことはありません.",
-    rate: 2,
-    icon: "devicon-github-original",
-  },
-  {
-    id: 11,
     title: "C",
     desc: "学校の講義で学習しました.",
     rate: 2,
     icon: "devicon-c-plain c-color",
   },
   {
-    id: 12,
+    id: 11,
     title: "C++",
     desc: "学校の講義で学習しました.",
     rate: 2,
     icon: "devicon-cplusplus-plain cplus-color",
   },
   {
-    id: 13,
+    id: 12,
     title: "Ruby",
     desc: "Railsを使うために勉強を開始しました.",
     rate: 1,
     icon: "devicon-ruby-plain ruby-color",
   },
   {
-    id: 14,
+    id: 13,
     title: "Ruby on Rails",
     desc: "バックエンドの知識を深めるために勉強を開始しました.",
     rate: 2,

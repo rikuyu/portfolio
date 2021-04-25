@@ -6,6 +6,13 @@ export type CardItem = {
   icon: string;
 };
 
+export type ProductItem = {
+  id: number;
+  title: string;
+  desc: string;
+  img: string;
+};
+
 export type Event = {
   id: number;
   date: string;

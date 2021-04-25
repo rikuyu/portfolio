@@ -97,7 +97,7 @@ const Navbar = () => {
               </Tabs>
             </div>
             <div className="btn-menu">
-              <p className="navbar-title">Yuki's Portolio</p>
+              <p className="navbar-title">Yuki's Portfolio</p>
               <div className="btn">
                 <Button
                   aria-controls="simple-menu"
