@@ -12,7 +12,7 @@ import BlogImg from "../assets/images/blog.png";
 import PokemonImg from "../assets/images/pokemon-port.png";
 import PortfolioImg from "../assets/images/port.png";
 import WeatherImg from "../assets/images/weather.png";
-import TwitchImg from "../assets/images/twitch.png";
+import TwitchImg from "../assets/images/twitch-game.png";
 import TimerImg from "../assets/images/timer.png";
 import PubgImg from "../assets/images/pubg-port.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
