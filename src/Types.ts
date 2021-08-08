@@ -20,6 +20,9 @@ export type Event = {
   date: string;
   title: string;
   eventDesc: string;
+  isShowIcon: boolean;
+  icon?: any;
+  iconColor?: string;
 };
 
 export type NavbarItem = {

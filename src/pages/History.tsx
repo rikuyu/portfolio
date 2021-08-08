@@ -4,11 +4,10 @@ import {
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import BusinessIcon from "@material-ui/icons/Business";
-import PeopleAltIcon from "@material-ui/icons/PeopleAlt";
-import PhoneIphoneIcon from "@material-ui/icons/PhoneIphone";
-import EmojiEventsIcon from "@material-ui/icons/EmojiEvents";
+import SchoolIcon from "@material-ui/icons/School";
+import DnsIcon from "@material-ui/icons/Dns";
 import Footer from "../components/Footer";
+import AndroidIcon from "@material-ui/icons/Android";
 import { Event } from "../Types";
 import "../assets/styles/history.scss";
 
@@ -18,21 +17,25 @@ const eventLists: Event[] = [
     date: "2019-04",
     title: "大学入学",
     eventDesc:
-      "情報系の学科に進学し、コンピュータサイエンスを学習し始めました。",
+      "情報系の学科に進学し、コンピュータサイエンスを学習し始めました.",
+    isShowIcon: true,
+    icon: <SchoolIcon />,
   },
   {
     id: 1,
     date: "2019-05",
     title: "Java 学習開始",
     eventDesc:
-      "大学の講義にてJavaの学習を始めました。Javaが最初に学ぶプログラミング言語となります。",
+      "大学の講義にてJavaの学習を始めました.Javaが最初に学ぶプログラミング言語となります.",
+    isShowIcon: false,
   },
   {
     id: 2,
     date: "2019-07",
     title: "HTML・CSSと出会う",
     eventDesc:
-      "HTML・CSSと出会い学習を開始しました。CSSにとても苦手意識があります。",
+      "HTML・CSSと出会い学習を開始しました.CSSにとても苦手意識があります.",
+    isShowIcon: false,
   },
   {
     id: 4,
@@ -40,19 +43,41 @@ const eventLists: Event[] = [
     title: "JavaScriptの学習開始",
     eventDesc:
       "フロント・サーバーサイドの両方の開発が可能であることに価値を感じ、JSを学び始める",
+    isShowIcon: false,
   },
   {
     id: 5,
     date: "2020-08",
     title: "Reactの学習開始・Blogの開始",
     eventDesc:
-      "日本国内外の需要を踏まえ、Reactの学習を始める。同時期にブログを始める。",
+      "日本国内外の需要を踏まえ、Reactの学習を始める.同時期にブログを始める.",
+    isShowIcon: false,
   },
   {
     id: 6,
     date: "2020-09",
     title: "Node・Expressの学習開始",
-    eventDesc: "WebAPIに興味がわき、勉強を開始する。",
+    eventDesc: "WebAPIに興味がわき、勉強を開始する.",
+    isShowIcon: false,
+  },
+  {
+    id: 7,
+    date: "2021-02",
+    title: "Androidアプリ開発の学習開始",
+    eventDesc: "モバイル開発に興味がわき、始めました.",
+    isShowIcon: true,
+    icon: <AndroidIcon />,
+    iconColor: "#32de84",
+  },
+  {
+    id: 8,
+    date: "2021-0802 ～ 2021-0806",
+    title: "就業型サマーインターン",
+    eventDesc:
+      "モバイル開発コースに参加し、Office新着通知アプリの機能改善に取り組みました.",
+    isShowIcon: true,
+    icon: <AndroidIcon />,
+    iconColor: "#32de84",
   },
 ];
 
@@ -71,7 +96,11 @@ const History = () => {
               contentStyle={{ background: "#fff", color: "#3a3a3f" }}
               contentArrowStyle={{ borderRight: "7px solid  #fff" }}
               date={value.date}
-              iconStyle={{ background: "#3a3a3f", color: "#3a3a3f" }}
+              iconStyle={{
+                background: "#3a3a3f",
+                color: value.isShowIcon ? value.iconColor : "fff",
+              }}
+              icon={value.isShowIcon ? value.icon : ""}
             >
               <h3 className="vertical-timeline-element-title">{value.title}</h3>
               <p>{value.eventDesc}</p>
@@ -84,22 +113,16 @@ const History = () => {
       <p className="titleFuture">～これからしたいこと～</p>
       <div className="futureList">
         <div className="futureItem">
-          <BusinessIcon className="futureIcon" />
-          <p>
-            チーム体制での開発経験を積みたいです。インターンに積極的に参加したい。ハッカソンもやりたいです。
-          </p>
+          <AndroidIcon className="futureIcon" />
+          <p>ハッカソン形式のイベントに参加したい.</p>
         </div>
         <div className="futureItem">
-          <PeopleAltIcon className="futureIcon" />
-          <p>勉強会やカンファレンス等に参加したい。</p>
+          <AndroidIcon className="futureIcon" />
+          <p>Jetpack Composeの学習をしたい.</p>
         </div>
         <div className="futureItem">
-          <PhoneIphoneIcon className="futureIcon" />
-          <p>少し興味があるので、Mobileアプリ開発かじってみたい。</p>
-        </div>
-        <div className="futureItem">
-          <EmojiEventsIcon className="futureIcon" />
-          <p>Atcoder 少しずつ過去問解き始めてます。</p>
+          <DnsIcon className="futureIcon" />
+          <p>サーバーサイドをKotlinで書いてみたい.</p>
         </div>
       </div>
       <Footer />
