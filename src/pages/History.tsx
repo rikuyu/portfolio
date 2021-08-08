@@ -20,6 +20,7 @@ const eventLists: Event[] = [
       "情報系の学科に進学し、コンピュータサイエンスを学習し始めました.",
     isShowIcon: true,
     icon: <SchoolIcon />,
+    iconColor: "#fff",
   },
   {
     id: 1,
