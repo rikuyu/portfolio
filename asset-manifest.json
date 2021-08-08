@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.ba1306b9.chunk.css",
-    "main.js": "/Portfolio/static/js/main.1b61143e.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.1b61143e.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.f21bf692.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.f21bf692.js.map",
+    "main.js": "/Portfolio/static/js/main.e35dbf6b.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.e35dbf6b.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.89db81a3.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.89db81a3.js.map",
     "static/css/2.2aa38b9c.chunk.css": "/Portfolio/static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.e67f41bc.chunk.js": "/Portfolio/static/js/2.e67f41bc.chunk.js",
-    "static/js/2.e67f41bc.chunk.js.map": "/Portfolio/static/js/2.e67f41bc.chunk.js.map",
-    "static/js/3.5081cefc.chunk.js": "/Portfolio/static/js/3.5081cefc.chunk.js",
-    "static/js/3.5081cefc.chunk.js.map": "/Portfolio/static/js/3.5081cefc.chunk.js.map",
+    "static/js/2.c6c823c0.chunk.js": "/Portfolio/static/js/2.c6c823c0.chunk.js",
+    "static/js/2.c6c823c0.chunk.js.map": "/Portfolio/static/js/2.c6c823c0.chunk.js.map",
+    "static/js/3.3d9a7124.chunk.js": "/Portfolio/static/js/3.3d9a7124.chunk.js",
+    "static/js/3.3d9a7124.chunk.js.map": "/Portfolio/static/js/3.3d9a7124.chunk.js.map",
     "index.html": "/Portfolio/index.html",
     "static/css/2.2aa38b9c.chunk.css.map": "/Portfolio/static/css/2.2aa38b9c.chunk.css.map",
     "static/css/main.ba1306b9.chunk.css.map": "/Portfolio/static/css/main.ba1306b9.chunk.css.map",
-    "static/js/2.e67f41bc.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.e67f41bc.chunk.js.LICENSE.txt",
+    "static/js/2.c6c823c0.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.c6c823c0.chunk.js.LICENSE.txt",
     "static/media/blog.e05fdf42.png": "/Portfolio/static/media/blog.e05fdf42.png",
     "static/media/pokemon-port.a771e06e.png": "/Portfolio/static/media/pokemon-port.a771e06e.png",
     "static/media/port.65d769cc.png": "/Portfolio/static/media/port.65d769cc.png",
@@ -23,10 +23,10 @@
     "static/media/weather.5ca26fcc.png": "/Portfolio/static/media/weather.5ca26fcc.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f21bf692.js",
+    "static/js/runtime-main.89db81a3.js",
     "static/css/2.2aa38b9c.chunk.css",
-    "static/js/2.e67f41bc.chunk.js",
+    "static/js/2.c6c823c0.chunk.js",
     "static/css/main.ba1306b9.chunk.css",
-    "static/js/main.1b61143e.chunk.js"
+    "static/js/main.e35dbf6b.chunk.js"
   ]
 }
