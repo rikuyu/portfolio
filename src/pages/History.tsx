@@ -14,7 +14,7 @@ import "../assets/styles/history.scss";
 const eventLists: Event[] = [
   {
     id: 0,
-    date: "2019-04",
+    date: "2019-4",
     title: "大学入学",
     eventDesc:
       "情報系の学科に進学し、コンピュータサイエンスを学習し始めました.",
@@ -24,7 +24,7 @@ const eventLists: Event[] = [
   },
   {
     id: 1,
-    date: "2019-05",
+    date: "2019-5",
     title: "Java 学習開始",
     eventDesc:
       "大学の講義にてJavaの学習を始めました.Javaが最初に学ぶプログラミング言語となります.",
@@ -32,7 +32,7 @@ const eventLists: Event[] = [
   },
   {
     id: 2,
-    date: "2019-07",
+    date: "2019-7",
     title: "HTML・CSSと出会う",
     eventDesc:
       "HTML・CSSと出会い学習を開始しました.CSSにとても苦手意識があります.",
@@ -40,7 +40,7 @@ const eventLists: Event[] = [
   },
   {
     id: 4,
-    date: "2020-03",
+    date: "2020-3",
     title: "JavaScriptの学習開始",
     eventDesc:
       "フロント・サーバーサイドの両方の開発が可能であることに価値を感じ、JSを学び始める",
@@ -48,7 +48,7 @@ const eventLists: Event[] = [
   },
   {
     id: 5,
-    date: "2020-08",
+    date: "2020-8",
     title: "Reactの学習開始・Blogの開始",
     eventDesc:
       "日本国内外の需要を踏まえ、Reactの学習を始める.同時期にブログを始める.",
@@ -56,14 +56,14 @@ const eventLists: Event[] = [
   },
   {
     id: 6,
-    date: "2020-09",
+    date: "2020-9",
     title: "Node・Expressの学習開始",
     eventDesc: "WebAPIに興味がわき、勉強を開始する.",
     isShowIcon: false,
   },
   {
     id: 7,
-    date: "2021-02",
+    date: "2021-2",
     title: "Androidアプリ開発の学習開始",
     eventDesc: "モバイル開発に興味がわき、始めました.",
     isShowIcon: true,
@@ -72,8 +72,8 @@ const eventLists: Event[] = [
   },
   {
     id: 8,
-    date: "2021-0802 ～ 2021-0806",
-    title: "就業型サマーインターン",
+    date: "2021-8/2 ～ 2021-8/6",
+    title: "サイボウズ インターン",
     eventDesc:
       "モバイル開発コースに参加し、Office新着通知アプリの機能改善に取り組みました.",
     isShowIcon: true,
