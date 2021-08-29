@@ -15,7 +15,7 @@ const createData = (name: string, context: string) => {
 };
 
 const rows = [
-  createData("名前", "小林 勇貴"),
+  createData("名前", "yuki"),
   createData("所属", "同志社大学 情報システムデザイン学科 3年"),
   createData("趣味", "ゲーム、読書"),
 ];

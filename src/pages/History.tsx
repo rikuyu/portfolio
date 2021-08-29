@@ -32,14 +32,6 @@ const eventLists: Event[] = [
   },
   {
     id: 2,
-    date: "2019-7",
-    title: "HTML・CSSと出会う",
-    eventDesc:
-      "HTML・CSSと出会い学習を開始しました.CSSにとても苦手意識があります.",
-    isShowIcon: false,
-  },
-  {
-    id: 4,
     date: "2020-3",
     title: "JavaScriptの学習開始",
     eventDesc:
@@ -47,7 +39,7 @@ const eventLists: Event[] = [
     isShowIcon: false,
   },
   {
-    id: 5,
+    id: 3,
     date: "2020-8",
     title: "Reactの学習開始・Blogの開始",
     eventDesc:
@@ -55,14 +47,14 @@ const eventLists: Event[] = [
     isShowIcon: false,
   },
   {
-    id: 6,
+    id: 4,
     date: "2020-9",
     title: "Node・Expressの学習開始",
     eventDesc: "WebAPIに興味がわき、勉強を開始する.",
     isShowIcon: false,
   },
   {
-    id: 7,
+    id: 5,
     date: "2021-2",
     title: "Androidアプリ開発の学習開始",
     eventDesc: "モバイル開発に興味がわき、始めました.",
@@ -71,11 +63,20 @@ const eventLists: Event[] = [
     iconColor: "#32de84",
   },
   {
-    id: 8,
+    id: 6,
     date: "2021-8/2 ～ 2021-8/6",
     title: "サイボウズ インターン",
     eventDesc:
       "モバイル開発コースに参加し、Office新着通知アプリの機能改善に取り組みました.",
+    isShowIcon: true,
+    icon: <AndroidIcon />,
+    iconColor: "#32de84",
+  },
+  {
+    id: 7,
+    date: "2021-8/17 ～ 2021-8/27",
+    title: "チームラボ インターン",
+    eventDesc: "2週間実際の案件に参加し、銀行のアプリ作成に携わりました.",
     isShowIcon: true,
     icon: <AndroidIcon />,
     iconColor: "#32de84",
