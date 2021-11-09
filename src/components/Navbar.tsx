@@ -12,14 +12,15 @@ import Button from "@material-ui/core/Button";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
 import { NavbarItem } from "../Types";
+import { NavbarItemLabel } from "../Types";
 import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
-import HomeOutlinedIcon from "@material-ui/icons/HomeOutlined";
-import PortraitIcon from "@material-ui/icons/Portrait";
-import BuildOutlinedIcon from "@material-ui/icons/BuildOutlined";
-import ColorLensOutlinedIcon from "@material-ui/icons/ColorLensOutlined";
-import QueryBuilderIcon from "@material-ui/icons/QueryBuilder";
-import MailOutlineOutlinedIcon from "@material-ui/icons/MailOutlineOutlined";
+import HomeIcon from "@mui/icons-material/Home";
+import PortraitIcon from "@mui/icons-material/Portrait";
+import BuildIcon from "@mui/icons-material/Build";
+import ColorLensIcon from "@mui/icons-material/ColorLens";
+import AccessTimeIcon from "@mui/icons-material/AccessTime";
+import EmailIcon from "@mui/icons-material/Email";
 
 const Navbar = () => {
   const navbarItem: NavbarItem[] = [
@@ -27,31 +28,37 @@ const Navbar = () => {
       id: 1,
       route: "/",
       label: "HOME",
+      icon: "HOME",
     },
     {
       id: 2,
       route: "/about",
       label: "ABOUT",
+      icon: "ABOUT",
     },
     {
       id: 3,
       route: "/skills",
       label: "SKILL",
+      icon: "SKILL",
     },
     {
       id: 4,
       route: "/history",
       label: "HISTORY",
+      icon: "HISTORY",
     },
     {
       id: 5,
       route: "/products",
       label: "PRODUCT",
+      icon: "PRODUCT",
     },
     {
       id: 6,
       route: "/contact",
       label: "CONTACT",
+      icon: "CONTACT",
     },
   ];
 
@@ -63,6 +70,29 @@ const Navbar = () => {
 
   const handleClose = () => {
     setAnchorEl(null);
+  };
+
+  const selectIcon = (icon: NavbarItemLabel) => {
+    switch (icon) {
+      case "HOME":
+        return <HomeIcon className="menu-item-icon large-screen home" />;
+      case "ABOUT":
+        return (
+          <PortraitIcon className="menu-item-icon large-screen about-me" />
+        );
+      case "SKILL":
+        return <BuildIcon className="menu-item-icon large-screen skills" />;
+      case "HISTORY":
+        return (
+          <AccessTimeIcon className="menu-item-icon large-screen my-history" />
+        );
+      case "PRODUCT":
+        return (
+          <ColorLensIcon className="menu-item-icon large-screen products" />
+        );
+      case "CONTACT":
+        return <EmailIcon className="menu-item-icon large-screen contacts" />;
+    }
   };
 
   return (
@@ -89,6 +119,7 @@ const Navbar = () => {
                       label={val.label}
                       value={val.route}
                       key={val.id}
+                      // icon={selectIcon(val.icon)}
                       component={Link}
                       to={val.route}
                     />
@@ -97,7 +128,7 @@ const Navbar = () => {
               </Tabs>
             </div>
             <div className="btn-menu">
-              <p className="navbar-title">Yuki's Portfolio</p>
+              <p className="navbar-title">Portfolio</p>
               <div className="btn">
                 <Button
                   aria-controls="simple-menu"
@@ -119,27 +150,27 @@ const Navbar = () => {
                 onClose={handleClose}
               >
                 <MenuItem onClick={handleClose} component={Link} to="/">
-                  <HomeOutlinedIcon className="menu-item-icon" />
+                  <HomeIcon className="menu-item-icon home" />
                   HOME
                 </MenuItem>
                 <MenuItem onClick={handleClose} component={Link} to="/about">
-                  <PortraitIcon className="menu-item-icon" />
+                  <PortraitIcon className="menu-item-icon about-me" />
                   ABOUT
                 </MenuItem>
                 <MenuItem onClick={handleClose} component={Link} to="/skills">
-                  <BuildOutlinedIcon className="menu-item-icon" />
+                  <BuildIcon className="menu-item-icon skills" />
                   SKILLS
                 </MenuItem>
                 <MenuItem onClick={handleClose} component={Link} to="/history">
-                  <QueryBuilderIcon className="menu-item-icon" />
+                  <AccessTimeIcon className="menu-item-icon my-history" />
                   HISTORY
                 </MenuItem>
                 <MenuItem onClick={handleClose} component={Link} to="/products">
-                  <ColorLensOutlinedIcon className="menu-item-icon" />
+                  <ColorLensIcon className="menu-item-icon products" />
                   PRODUCTS
                 </MenuItem>
                 <MenuItem onClick={handleClose} component={Link} to="/contact">
-                  <MailOutlineOutlinedIcon className="menu-item-icon" />
+                  <EmailIcon className="menu-item-icon contacts" />
                   CONTACT
                 </MenuItem>
               </Menu>

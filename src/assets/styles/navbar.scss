@@ -1,5 +1,22 @@
 $icon-color: #3a3a3f;
 
+
+$purple: #241379;
+$medium-blue: #2185bf;
+$light-blue: #1fbce1;
+
+$red: #b62f56;
+$orange: #d5764c;
+$yellow: #ffd53e;
+
+$cyan: #78ffba;
+$light-green: #98fd85;
+$lime: #befb46;
+
+$magenta: #6c046c;
+$lightish-red: #f04c81;
+$pink: #ff4293;
+
 .btn-menu{
     display: none;
 
@@ -24,8 +41,31 @@ $icon-color: #3a3a3f;
 }
 
 .menu-item-icon{
-    color: $icon-color;
     margin-right: 12px;
+}
+
+.home{
+    color: $light-blue
+}
+
+.about-me{
+    color: $lightish-red;
+}
+
+.skills{
+    color: $medium-blue;
+}
+
+.my-history{
+    color: $yellow;
+}
+
+.products{
+    color: $pink;
+}
+
+.contacts{
+    color: $lime;
 }
 
 @media screen and (max-width: 1020px) {

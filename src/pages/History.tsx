@@ -27,7 +27,7 @@ const eventLists: Event[] = [
     date: "2019-5",
     title: "Java 学習開始",
     eventDesc:
-      "大学の講義にてJavaの学習を始めました.Javaが最初に学ぶプログラミング言語となります.",
+      "大学の講義にてJavaの学習を始めました.Javaが最初に学ぶプログラミング言語となる.",
     isShowIcon: false,
   },
   {
@@ -43,21 +43,21 @@ const eventLists: Event[] = [
     date: "2020-8",
     title: "Reactの学習開始・Blogの開始",
     eventDesc:
-      "日本国内外の需要を踏まえ、Reactの学習を始める.同時期にブログを始める.",
+      "Webフロントに興味がわき、Reactの学習を始める. 同時期に技術ブログを始める.",
     isShowIcon: false,
   },
   {
     id: 4,
     date: "2020-9",
     title: "Node・Expressの学習開始",
-    eventDesc: "WebAPIに興味がわき、勉強を開始する.",
+    eventDesc: "JSでサーバーサイドを書くことに興味がわき、勉強を開始する.",
     isShowIcon: false,
   },
   {
     id: 5,
     date: "2021-2",
     title: "Androidアプリ開発の学習開始",
-    eventDesc: "モバイル開発に興味がわき、始めました.",
+    eventDesc: "モバイル開発に興味がわき、始める.",
     isShowIcon: true,
     icon: <AndroidIcon />,
     iconColor: "#32de84",
@@ -67,7 +67,7 @@ const eventLists: Event[] = [
     date: "2021-8/2 ～ 2021-8/6",
     title: "サイボウズ インターン",
     eventDesc:
-      "モバイル開発コースに参加し、Office新着通知アプリの機能改善に取り組みました.",
+      "モバイル開発コースに参加し、Office新着通知アプリの機能改善に取り組む.",
     isShowIcon: true,
     icon: <AndroidIcon />,
     iconColor: "#32de84",

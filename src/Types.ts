@@ -28,8 +28,17 @@ export type Event = {
 export type NavbarItem = {
   id: number;
   route: string;
-  label: string;
+  label: NavbarItemLabel;
+  icon: NavbarItemLabel;
 };
+
+export type NavbarItemLabel =
+  | "HOME"
+  | "ABOUT"
+  | "SKILL"
+  | "HISTORY"
+  | "PRODUCT"
+  | "CONTACT";
 
 export type MyInfo = {
   id: number;
