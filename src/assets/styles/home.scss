@@ -94,7 +94,7 @@ div.item::after {
 
   .#{$color-name} {
     $size: random-num(5,50) + px;
-    animation: #{$color-name} linear 30s alternate infinite;
+    animation: #{$color-name} linear 15s alternate infinite;
     border: 2px solid #{$color-hex};
     border-radius: 100%;
     width: $size;
@@ -107,7 +107,7 @@ div.item::after {
   }
 
   .#{$color-name}::before {
-    animation: #{$color-name}-pseudo linear 25s alternate infinite;
+    animation: #{$color-name}-pseudo linear 20s alternate infinite;
     background: #{$color-hex};
     border: 2px solid #{$color-hex};
     width: random-num(5,50) + px;
@@ -121,7 +121,7 @@ div.item::after {
   }
 
   .#{$color-name}::after{
-    animation: #{$color-name}-pseudo linear 20s alternate infinite;
+    animation: #{$color-name}-pseudo linear 25s alternate infinite;
     border: 2px solid #{$color-hex};
     width: random-num(5,50) + px;
     height: random-num(5,50) + px;
