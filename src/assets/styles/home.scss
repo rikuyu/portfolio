@@ -51,8 +51,9 @@ $colors: (
   &:active {
     div.item,
     div.item::before,
-    div.item::after { 
-      padding: 50px;
+    div.item::after {
+      mix-blend-mode: color-dodge; 
+      padding: 5px;
     }
   }
 }
@@ -66,7 +67,7 @@ div.item::after {
   left: 0;
   opacity: 0.9;
   transform-origin: top;
-  transition: all 30s linear 0s;
+  transition: all 5s linear 0s;
 }
 
 @function random-num($min, $max) {
@@ -94,7 +95,7 @@ div.item::after {
 
   .#{$color-name} {
     $size: random-num(5,50) + px;
-    animation: #{$color-name} linear 15s alternate infinite;
+    animation: #{$color-name} linear 30s alternate infinite;
     border: 2px solid #{$color-hex};
     border-radius: 100%;
     width: $size;
@@ -107,7 +108,7 @@ div.item::after {
   }
 
   .#{$color-name}::before {
-    animation: #{$color-name}-pseudo linear 20s alternate infinite;
+    animation: #{$color-name}-pseudo linear 25s alternate infinite;
     background: #{$color-hex};
     border: 2px solid #{$color-hex};
     width: random-num(5,50) + px;
@@ -121,7 +122,7 @@ div.item::after {
   }
 
   .#{$color-name}::after{
-    animation: #{$color-name}-pseudo linear 25s alternate infinite;
+    animation: #{$color-name}-pseudo linear 20s alternate infinite;
     border: 2px solid #{$color-hex};
     width: random-num(5,50) + px;
     height: random-num(5,50) + px;
