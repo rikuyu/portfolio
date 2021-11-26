@@ -17,7 +17,7 @@ const createData = (name: string, context: string) => {
 const rows = [
   createData("名前", "yuki"),
   createData("所属", "同志社大学 情報システムデザイン学科 3年"),
-  createData("趣味", "ゲーム、読書"),
+  createData("趣味", "音楽を聴くこと"),
 ];
 
 const myInfo: MyInfo[] = [
@@ -40,8 +40,8 @@ const myInfo: MyInfo[] = [
   },
   {
     id: 4,
-    question: "Q.　四回生では、どんな研究室に入るつもり？",
-    answer: "A.　OSの研究室に入りたい",
+    question: "Q.　どんな音楽聴いてるの？",
+    answer: "A.　AAA, DaiCE, TWICE, BTS",
   },
 ];
 
