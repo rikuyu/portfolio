@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.18068abe.chunk.css",
-    "main.js": "/portfolio/static/js/main.9c61788a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.9c61788a.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.77d24af7.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.77d24af7.js.map",
+    "main.css": "/portfolio/static/css/main.f85c255f.chunk.css",
+    "main.js": "/portfolio/static/js/main.2bbb1408.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.2bbb1408.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.c6596e32.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.c6596e32.js.map",
     "static/css/2.2e99a83d.chunk.css": "/portfolio/static/css/2.2e99a83d.chunk.css",
-    "static/js/2.43a79105.chunk.js": "/portfolio/static/js/2.43a79105.chunk.js",
-    "static/js/2.43a79105.chunk.js.map": "/portfolio/static/js/2.43a79105.chunk.js.map",
-    "static/js/3.76f1e877.chunk.js": "/portfolio/static/js/3.76f1e877.chunk.js",
-    "static/js/3.76f1e877.chunk.js.map": "/portfolio/static/js/3.76f1e877.chunk.js.map",
+    "static/js/2.70a1ccc4.chunk.js": "/portfolio/static/js/2.70a1ccc4.chunk.js",
+    "static/js/2.70a1ccc4.chunk.js.map": "/portfolio/static/js/2.70a1ccc4.chunk.js.map",
+    "static/js/3.be98e173.chunk.js": "/portfolio/static/js/3.be98e173.chunk.js",
+    "static/js/3.be98e173.chunk.js.map": "/portfolio/static/js/3.be98e173.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.2e99a83d.chunk.css.map": "/portfolio/static/css/2.2e99a83d.chunk.css.map",
-    "static/css/main.18068abe.chunk.css.map": "/portfolio/static/css/main.18068abe.chunk.css.map",
-    "static/js/2.43a79105.chunk.js.LICENSE.txt": "/portfolio/static/js/2.43a79105.chunk.js.LICENSE.txt",
+    "static/css/main.f85c255f.chunk.css.map": "/portfolio/static/css/main.f85c255f.chunk.css.map",
+    "static/js/2.70a1ccc4.chunk.js.LICENSE.txt": "/portfolio/static/js/2.70a1ccc4.chunk.js.LICENSE.txt",
     "static/media/blog.e05fdf42.png": "/portfolio/static/media/blog.e05fdf42.png",
     "static/media/pokemon-port.a771e06e.png": "/portfolio/static/media/pokemon-port.a771e06e.png",
     "static/media/port.65d769cc.png": "/portfolio/static/media/port.65d769cc.png",
@@ -23,10 +23,10 @@
     "static/media/weather.5ca26fcc.png": "/portfolio/static/media/weather.5ca26fcc.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.77d24af7.js",
+    "static/js/runtime-main.c6596e32.js",
     "static/css/2.2e99a83d.chunk.css",
-    "static/js/2.43a79105.chunk.js",
-    "static/css/main.18068abe.chunk.css",
-    "static/js/main.9c61788a.chunk.js"
+    "static/js/2.70a1ccc4.chunk.js",
+    "static/css/main.f85c255f.chunk.css",
+    "static/js/main.2bbb1408.chunk.js"
   ]
 }
