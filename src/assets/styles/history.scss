@@ -10,34 +10,10 @@ $background-color: #3a3a3f;
     padding-top: 70px;
     text-align: center;
   }
-  .titleFuture {
-    color: $text-color;
-    font-size: 18px;
-    text-align: center;
-  }
-  .futureList{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    .futureItem{
-      display: flex;
-      margin: 10px 0px;
-      .futureIcon{
-        color: $text-color;
-        font-size: 30px;
-      }
-      p{
-        margin-top: 5px;
-        margin-left: 8px;
-        color: $text-color;
-      }
-    }
-  }
   
   .timeline {
     background-color: $background-color;
+    margin-bottom: 70px;
 
     .vertical-timeline-element-date {
       color: white;
@@ -53,9 +29,6 @@ $background-color: #3a3a3f;
       .vertical-timeline-element-date {
         color: $background-color;
       }
-    }
-    .futureList{
-      margin: 0px 35px 25px 35px;
     }
   }
 }
@@ -75,9 +48,6 @@ $background-color: #3a3a3f;
       .vertical-timeline-element-date {
         color: $background-color;
       }
-    }
-    .futureList{
-      margin: 0px 10px 25px 10px;
     }
   }
 }

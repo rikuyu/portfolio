@@ -13,14 +13,14 @@ export const skillItems: CardItem[] = [
   {
     id: 0,
     title: "Kotlin",
-    desc: "Android開発で使用しています.",
+    desc: "Android開発で使用しています. Ktorをちょっと",
     rate: 3,
     icon: "devicon-kotlin-plain kotlin-color",
   },
   {
     id: 1,
     title: "Android",
-    desc: "Androidエンジニアになりたい.",
+    desc: "もっとも得意とする分野です.",
     rate: 3,
     icon: "devicon-android-plain colored",
   },
@@ -33,27 +33,6 @@ export const skillItems: CardItem[] = [
   },
   {
     id: 3,
-    title: "Redux",
-    desc: "大規模開発を考え、状態管理について学びたいと思って勉強を始めました.",
-    rate: 1,
-    icon: "devicon-redux-original redux-color",
-  },
-  {
-    id: 4,
-    title: "Node.js",
-    desc: "サーバーサイドを学びたいと思って勉強を始めました.",
-    rate: 2,
-    icon: "devicon-nodejs-plain colored padd",
-  },
-  {
-    id: 5,
-    title: "Express",
-    desc: "Node.jsをより簡易的に書けると知り、勉強を始めました.",
-    rate: 2,
-    icon: "devicon-express-original",
-  },
-  {
-    id: 6,
     title: "MySQL",
     desc:
       "DBについて学びたいと思って勉強を始めました. MySQLという名前の由来面白いですよね.",
@@ -61,15 +40,14 @@ export const skillItems: CardItem[] = [
     icon: "devicon-mysql-plain",
   },
   {
-    id: 7,
+    id: 4,
     title: "Firebase",
-    desc:
-      "Android開発にて、Cloud Firestore, Auth, Cloud Storage を使用しました。",
+    desc: "Android開発で使用しています.",
     rate: 2,
     icon: "devicon-firebase-plain colored",
   },
   {
-    id: 8,
+    id: 5,
     title: "Java",
     desc:
       "大学で学んだ言語です.この言語で木構造や整列、スタックなどのアルゴリズムを学びました.",
@@ -77,40 +55,18 @@ export const skillItems: CardItem[] = [
     icon: "devicon-java-plain colored padd",
   },
   {
-    id: 9,
+    id: 4,
     title: "TypeScript",
-    desc:
-      "中・大規模開発に向けて静的型付けを学んでいます.学習コストが高いと感じています.",
+    desc: "",
     rate: 1,
     icon: "devicon-typescript-plain ts-color",
   },
   {
-    id: 10,
+    id: 5,
     title: "C",
-    desc: "学校の講義で学習しました.",
+    desc: "学校の講義で学習しました. 脳が受け付けないかまったく身に付いてない.",
     rate: 2,
     icon: "devicon-c-plain c-color",
-  },
-  {
-    id: 11,
-    title: "C++",
-    desc: "学校の講義で学習しました.",
-    rate: 2,
-    icon: "devicon-cplusplus-plain cplus-color",
-  },
-  {
-    id: 12,
-    title: "Ruby",
-    desc: "Railsを使うために勉強を開始しました.",
-    rate: 1,
-    icon: "devicon-ruby-plain ruby-color",
-  },
-  {
-    id: 13,
-    title: "Ruby on Rails",
-    desc: "バックエンドの知識を深めるために勉強を開始しました.",
-    rate: 2,
-    icon: "devicon-rails-plain-wordmark rails-color",
   },
 ];
 
