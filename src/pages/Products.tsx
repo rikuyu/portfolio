@@ -9,18 +9,24 @@ import CardMedia from "@material-ui/core/CardMedia";
 import { ProductItem } from "../Types";
 import "../assets/styles/work.scss";
 import BlogImg from "../assets/images/blog.png";
-import PokemonImg from "../assets/images/pokemon-port.png";
 import PortfolioImg from "../assets/images/port.png";
 import WeatherImg from "../assets/images/weather.png";
 import TwitchImg from "../assets/images/twitch-game.png";
-import TimerImg from "../assets/images/timer.png";
-import PubgImg from "../assets/images/pubg-port.png";
+import ContactImg from "../assets/images/contact-lens.png";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import DesktopMacIcon from "@material-ui/icons/DesktopMac";
 
 export const productItems: ProductItem[] = [
   {
     id: 0,
+    title: "コンタクト交換リマインダー",
+    desc: "Jetpack Compose で作成しました.",
+    img: ContactImg,
+    techs: ["devicon-kotlin-plain colored", "devicon-android-plain colored"],
+    link: "https://github.com/rikuyu/contact-lens-reminder",
+  },
+  {
+    id: 1,
     title: "Portfolio",
     desc: "自己紹介ページが欲しいと思って作成しました.",
     img: PortfolioImg,
@@ -32,7 +38,16 @@ export const productItems: ProductItem[] = [
     link: "https://github.com/rikuyu/Portfolio",
   },
   {
-    id: 1,
+    id: 2,
+    title: "ゲーム動画を探せるアプリ",
+    desc:
+      "Twitch API で人気ゲームのストリーム動画が探せるアプリを作成しました.",
+    img: TwitchImg,
+    techs: ["devicon-kotlin-plain colored", "devicon-android-plain colored"],
+    link: "https://github.com/rikuyu/TwitchApp",
+  },
+  {
+    id: 3,
     title: "Blog",
     desc: "Hexo を用いて作成しました.日々の学習のアウトプットを行っています.",
     img: BlogImg,
@@ -40,27 +55,7 @@ export const productItems: ProductItem[] = [
     link: "https://www.yuuuki-blog.com/",
   },
   {
-    id: 3,
-    title: "Timer アプリ",
-    desc: "初めてGoogle Play にリリースしたアプリです.",
-    img: TimerImg,
-    techs: ["devicon-kotlin-plain colored", "devicon-android-plain colored"],
-    link: "https://github.com/rikuyu/TimerApp",
-  },
-  {
     id: 4,
-    title: "PUBG Mobile クイズ",
-    desc: "自分の好きなゲームのクイズアプリを作成しました.",
-    img: PubgImg,
-    techs: [
-      "devicon-kotlin-plain",
-      "devicon-android-plain colored",
-      "devicon-firebase-plain colored",
-    ],
-    link: "https://github.com/rikuyu/PUBG_QuizApp",
-  },
-  {
-    id: 5,
     title: "天気情報取得アプリ",
     desc: "世界各地の天気情報が見れるアプリです.",
     img: WeatherImg,
@@ -70,23 +65,6 @@ export const productItems: ProductItem[] = [
       "devicon-typescript-plain colored",
     ],
     link: "https://github.com/rikuyu/Weather-App",
-  },
-  {
-    id: 6,
-    title: "Pokemon図鑑",
-    desc: "HTTP通信を行う方法を学ぶために作りました.",
-    img: PokemonImg,
-    techs: ["devicon-kotlin-plain colored", "devicon-android-plain colored"],
-    link: "https://github.com/rikuyu/Pokedex",
-  },
-  {
-    id: 7,
-    title: "ゲーム動画アプリ",
-    desc:
-      "Twitch API で人気ゲームのストリーム動画が探せるアプリを作成しました.",
-    img: TwitchImg,
-    techs: ["devicon-kotlin-plain colored", "devicon-android-plain colored"],
-    link: "https://github.com/rikuyu/TwitchApp",
   },
 ];
 
@@ -119,7 +97,7 @@ const Products = () => {
                           >
                             {value.title}
                           </Typography>
-                          {value.id !== 1 ? (
+                          {value.id !== 3 ? (
                             <GitHubIcon
                               className="linkIcon"
                               onClick={() => window.open(value.link, "_blank")}

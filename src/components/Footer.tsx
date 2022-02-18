@@ -7,7 +7,7 @@ import LibraryBooksOutlinedIcon from "@material-ui/icons/LibraryBooksOutlined";
 function Footer() {
   return (
     <div className="footer">
-      <p className="footItem">© 2021 Yuki</p>
+      <p className="footItem">© 2022 Yuki</p>
       <GitHubIcon
         className="icon footItem first"
         onClick={() => window.open("https://github.com/rikuyu", "_blank")}

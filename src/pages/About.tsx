@@ -16,7 +16,7 @@ const createData = (name: string, context: string) => {
 
 const rows = [
   createData("名前", "yuki"),
-  createData("所属", "同志社大学 情報システムデザイン学科 3年"),
+  createData("所属", "同志社大学"),
   createData("趣味", "音楽を聴くこと"),
 ];
 
@@ -88,7 +88,7 @@ const About: React.FC = () => {
                 <div className="answer">
                   <p>
                     {info.answer}
-                    {info.id === 2 ? (
+                    {/* {info.id === 2 ? (
                       <span>
                         <Button
                           variant="contained"
@@ -126,7 +126,7 @@ const About: React.FC = () => {
                       </span>
                     ) : (
                       ""
-                    )}
+                    )} */}
                   </p>
                 </div>
               </div>
