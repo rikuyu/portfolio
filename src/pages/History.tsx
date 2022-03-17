@@ -46,6 +46,15 @@ const eventLists: Event[] = [
     icon: <AndroidIcon />,
     iconColor: "#32de84",
   },
+  {
+    id: 5,
+    date: "2022-03/02 ～ 2022-03/15",
+    title: "サイバーエージェント インターン",
+    eventDesc: "tapple の Androidアプリ開発に携わりました.",
+    isShowIcon: true,
+    icon: <AndroidIcon />,
+    iconColor: "#32de84",
+  },
 ];
 
 const History = () => {
