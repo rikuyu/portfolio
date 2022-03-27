@@ -1,10 +1,5 @@
 # Portfolio
 
-## デプロイ先
-
-Github Pages
-[Portfolio](https://rikuyu.github.io/Portfolio/)
-
 ## 使用技術
 
 - React
